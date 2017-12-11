@@ -1,0 +1,406 @@
+digraph G {
+subgraph cluster_ColaAvionesLlegan {
+node [shape=box, style=filled];
+label = "Llegada de Aviones";
+color = blue;
+"Avion 4
+Turdos Desabordaje: 1
+Numero Pasajeros: 8
+Turdos Mantenimiento: 3"
+}
+
+subgraph cluster_ColaPersonas1{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+"Persona 65
+No. Maletas: 4
+No. Documentos: 1
+Turdos para Registro: 3" -> "Persona 64
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 1""Persona 64
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 1" -> "Persona 63
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 1""Persona 63
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 62
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 3""Persona 62
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 3" -> "Persona 61
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 3""Persona 61
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 3" -> "Persona 60
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 3""Persona 60
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 59
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 2""Persona 59
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 2" -> "Persona 58
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 2""Persona 58
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 2" -> "Persona 57
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2""Persona 57
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 56
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 1""Persona 56
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 1" -> "Persona 55
+No. Maletas: 1
+No. Documentos: 2
+Turdos para Registro: 3""Persona 55
+No. Maletas: 1
+No. Documentos: 2
+Turdos para Registro: 3" -> "Persona 54
+No. Maletas: 2
+No. Documentos: 10
+Turdos para Registro: 2""Persona 54
+No. Maletas: 2
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 53
+No. Maletas: 2
+No. Documentos: 2
+Turdos para Registro: 3""Persona 53
+No. Maletas: 2
+No. Documentos: 2
+Turdos para Registro: 3" -> "Persona 52
+No. Maletas: 2
+No. Documentos: 5
+Turdos para Registro: 2""Persona 52
+No. Maletas: 2
+No. Documentos: 5
+Turdos para Registro: 2" -> "Persona 51
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 1""Persona 51
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 50
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1""Persona 50
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1" -> "Persona 49
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1""Persona 49
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1" -> "Persona 48
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 3""Persona 48
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 3" -> "Persona 47
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2""Persona 47
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 46
+No. Maletas: 4
+No. Documentos: 7
+Turdos para Registro: 3""Persona 46
+No. Maletas: 4
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 45
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 1""Persona 45
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 1" -> "Persona 44
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 2""Persona 44
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 2" -> "Persona 43
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2""Persona 43
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 42
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1""Persona 42
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1" -> "Persona 41
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 3""Persona 41
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 3" -> "Persona 40
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1""Persona 40
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 39
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1""Persona 39
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1" -> "Persona 38
+No. Maletas: 2
+No. Documentos: 5
+Turdos para Registro: 2""Persona 38
+No. Maletas: 2
+No. Documentos: 5
+Turdos para Registro: 2" -> "Persona 37
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 2""Persona 37
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 36
+No. Maletas: 4
+No. Documentos: 2
+Turdos para Registro: 1""Persona 36
+No. Maletas: 4
+No. Documentos: 2
+Turdos para Registro: 1" -> "Persona 35
+No. Maletas: 3
+No. Documentos: 1
+Turdos para Registro: 3""Persona 35
+No. Maletas: 3
+No. Documentos: 1
+Turdos para Registro: 3" -> "Persona 34
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 2""Persona 34
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 2" -> "Persona 33
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2""Persona 33
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 32
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 1""Persona 32
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 31
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 3""Persona 31
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 3" -> "Persona 30
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 2""Persona 30
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 29
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 3""Persona 29
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 3" -> "Persona 28
+No. Maletas: 2
+No. Documentos: 9
+Turdos para Registro: 3""Persona 28
+No. Maletas: 2
+No. Documentos: 9
+Turdos para Registro: 3" -> "Persona 27
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 1""Persona 27
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 1" -> "Persona 26
+No. Maletas: 4
+No. Documentos: 3
+Turdos para Registro: 2""Persona 26
+No. Maletas: 4
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 25
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 1""Persona 25
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 24
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 3""Persona 24
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 3" -> "Persona 23
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 2""Persona 23
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 2" -> "Persona 22
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1""Persona 22
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 21
+No. Maletas: 4
+No. Documentos: 7
+Turdos para Registro: 3""Persona 21
+No. Maletas: 4
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 20
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 1""Persona 20
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 1" -> "Persona 19
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 1""Persona 19
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 1" -> "Persona 18
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 1""Persona 18
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 17
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1""Persona 17
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1" -> "Persona 16
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 3""Persona 16
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 3" -> "Persona 15
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 3""Persona 15
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 3" -> "Persona 14
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 1""Persona 14
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 1" -> "Persona 13
+No. Maletas: 1
+No. Documentos: 2
+Turdos para Registro: 1""Persona 13
+No. Maletas: 1
+No. Documentos: 2
+Turdos para Registro: 1" -> "Persona 12
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 1""Persona 12
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 1" -> "Persona 11
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 1""Persona 11
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 1" -> "Persona 10
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 2""Persona 10
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 2" -> "Persona 9
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 1""Persona 9
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 1" -> "Persona 8
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 2""Persona 8
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 7
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 3""Persona 7
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 6
+No. Maletas: 1
+No. Documentos: 8
+Turdos para Registro: 2""Persona 6
+No. Maletas: 1
+No. Documentos: 8
+Turdos para Registro: 2" -> "Persona 5
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1""Persona 5
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1" -> "Persona 4
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 1""Persona 4
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 1" -> "Persona 3
+No. Maletas: 2
+No. Documentos: 9
+Turdos para Registro: 3""Persona 3
+No. Maletas: 2
+No. Documentos: 9
+Turdos para Registro: 3" -> "Persona 2
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 1""Persona 2
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 1
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 2""Persona 1
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 2"
+}
+
+}

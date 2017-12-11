@@ -28,13 +28,21 @@ SOURCES += \
         mainwindow.cpp \
     nodoavion.cpp \
     numeroaleatorio.cpp \
-    colaavionesaterrizan.cpp
+    colaavionesaterrizan.cpp \
+    nodopersona.cpp \
+    colapersonas.cpp \
+    nodoescritorio.cpp \
+    listaescritorios.cpp
 
 HEADERS += \
         mainwindow.h \
     nodoavion.h \
     numeroaleatorio.h \
-    colaavionesaterrizan.h
+    colaavionesaterrizan.h \
+    nodopersona.h \
+    colapersonas.h \
+    listaescritorios.h \
+    nodoescritorio.h
 
 FORMS += \
         mainwindow.ui

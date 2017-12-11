@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <colaavionesaterrizan.h>
+#include <colapersonas.h>
+
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +20,14 @@ public:
 
 private slots:
     void on_pushButton_2_clicked();
+
+    void on_pushButton_clicked();
+
+    void ActualizarGrafica();
+
+    void SiguienteTurnoAvionesAterrizan();
+
+    void SiguienteTurnoColaPasajeros();
 
 private:
     Ui::MainWindow *ui;

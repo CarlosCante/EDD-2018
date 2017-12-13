@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <colaavionesaterrizan.h>
 #include <colapersonas.h>
+#include <listaescritorios.h>
 
 
 namespace Ui {
@@ -26,8 +27,6 @@ private slots:
     void ActualizarGrafica();
 
     void SiguienteTurnoAvionesAterrizan();
-
-    void SiguienteTurnoColaPasajeros();
 
 private:
     Ui::MainWindow *ui;

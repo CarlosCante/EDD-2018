@@ -56,8 +56,26 @@ NodoAvion* ColaAvionesAterrizan::CrearAvion()
 
 NodoAvion* ColaAvionesAterrizan::SacarAvion()
 {
-    if(this->Ultimo == nullptr)
+    if(this->Ultimo == nullptr || this->Primero == nullptr)
         return nullptr;
+
+    if(this->Primero->siguiente == this->Ultimo)
+    {
+            NodoAvion* tmp = this->Ultimo;
+            tmp->anterior = nullptr;
+            this->Primero->siguiente = nullptr;
+            this->Ultimo = this->Primero;
+            return tmp;
+    }
+
+    if(this->Primero == this->Ultimo)
+    {
+        NodoAvion* tmp = this->Primero;
+        this->Primero = nullptr;
+        this->Ultimo = nullptr;
+
+        return tmp;
+    }
 
     NodoAvion* tmp = this->Ultimo;
     NodoAvion* tmp2 = this->Ultimo->anterior;
@@ -78,43 +96,46 @@ string ColaAvionesAterrizan::GenerarSubGrafo()
     subgrafo += "label = \"Llegada de Aviones\";\n";
     subgrafo += "color = blue;\n";
 
-    NodoAvion* aux = this->Primero;
+    if(this->Primero != nullptr)
+    {
+        NodoAvion* aux = this->Primero;
 
-    do {
-        subgrafo += "\"Avion " + to_string(aux->ID) + "\n";
-        subgrafo += "Turdos Desabordaje: " + to_string(aux->Turnos_D) + "\n";
-        subgrafo += "Numero Pasajeros: " + to_string(aux->No_Pasajeros) + "\n";
-        subgrafo += "Turdos Mantenimiento: " + to_string(aux->Turnos_M) + "\"";
-
-        if(aux->siguiente != nullptr)
-        {
-            subgrafo += " -> ";
-
-            subgrafo += "\"Avion " + to_string(aux->siguiente->ID) + "\n";
-            subgrafo += "Turdos Desabordaje: " + to_string(aux->siguiente->Turnos_D) + "\n";
-            subgrafo += "Numero Pasajeros: " + to_string(aux->siguiente->No_Pasajeros) + "\n";
-            subgrafo += "Turdos Mantenimiento: " + to_string(aux->siguiente->Turnos_M) + "\"";
-
-            subgrafo += "\n";
-
-            subgrafo = subgrafo + "\"Avion " + to_string(aux->siguiente->ID) + "\n";
-            subgrafo += "Turdos Desabordaje: " + to_string(aux->siguiente->Turnos_D) + "\n";
-            subgrafo += "Numero Pasajeros: " + to_string(aux->siguiente->No_Pasajeros) + "\n";
-            subgrafo += "Turdos Mantenimiento: " + to_string(aux->siguiente->Turnos_M) + "\"";
-
-            subgrafo += " -> ";
-
+        do {
             subgrafo += "\"Avion " + to_string(aux->ID) + "\n";
             subgrafo += "Turdos Desabordaje: " + to_string(aux->Turnos_D) + "\n";
             subgrafo += "Numero Pasajeros: " + to_string(aux->No_Pasajeros) + "\n";
             subgrafo += "Turdos Mantenimiento: " + to_string(aux->Turnos_M) + "\"";
 
-        }
+            if(aux->siguiente != nullptr)
+            {
+                subgrafo += " -> ";
 
-        aux = aux->siguiente;
-    } while (aux != nullptr);
+                subgrafo += "\"Avion " + to_string(aux->siguiente->ID) + "\n";
+                subgrafo += "Turdos Desabordaje: " + to_string(aux->siguiente->Turnos_D) + "\n";
+                subgrafo += "Numero Pasajeros: " + to_string(aux->siguiente->No_Pasajeros) + "\n";
+                subgrafo += "Turdos Mantenimiento: " + to_string(aux->siguiente->Turnos_M) + "\"";
 
-    free(aux);
+                subgrafo += "\n";
+
+                subgrafo = subgrafo + "\"Avion " + to_string(aux->siguiente->ID) + "\n";
+                subgrafo += "Turdos Desabordaje: " + to_string(aux->siguiente->Turnos_D) + "\n";
+                subgrafo += "Numero Pasajeros: " + to_string(aux->siguiente->No_Pasajeros) + "\n";
+                subgrafo += "Turdos Mantenimiento: " + to_string(aux->siguiente->Turnos_M) + "\"";
+
+                subgrafo += " -> ";
+
+                subgrafo += "\"Avion " + to_string(aux->ID) + "\n";
+                subgrafo += "Turdos Desabordaje: " + to_string(aux->Turnos_D) + "\n";
+                subgrafo += "Numero Pasajeros: " + to_string(aux->No_Pasajeros) + "\n";
+                subgrafo += "Turdos Mantenimiento: " + to_string(aux->Turnos_M) + "\"";
+
+            }
+
+            aux = aux->siguiente;
+        } while (aux != nullptr);
+
+        free(aux);
+    }
 
     subgrafo = subgrafo + "\n" + "}" + "\n\n";
     return subgrafo;

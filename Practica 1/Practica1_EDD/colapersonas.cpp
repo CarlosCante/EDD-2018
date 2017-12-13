@@ -44,7 +44,7 @@ void ColaPersonas::IngresarPersona2(NodoPersona *nueva)
     }
     else
     {
-        nuevo->siguiente = this->Primero;
+        nueva->siguiente = this->Primero;
         this->Primero = nueva;
     }
 }

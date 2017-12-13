@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\nodoavion.o
+./release\numeroaleatorio.o
+./release\colaavionesaterrizan.o
+./release\nodopersona.o
+./release\colapersonas.o
+./release\nodoescritorio.o
+./release\listaescritorios.o
+./release\moc_mainwindow.o
+);

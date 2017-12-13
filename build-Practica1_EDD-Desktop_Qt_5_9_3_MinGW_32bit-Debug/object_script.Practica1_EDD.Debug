@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\nodoavion.o
+./debug\numeroaleatorio.o
+./debug\colaavionesaterrizan.o
+./debug\nodopersona.o
+./debug\colapersonas.o
+./debug\nodoescritorio.o
+./debug\listaescritorios.o
+./debug\moc_mainwindow.o
+);

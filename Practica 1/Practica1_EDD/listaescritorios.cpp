@@ -19,7 +19,23 @@ void ListaEscritorios::AgregarEscritorio(NodoEscritorio* nuevo)
     {
         NodoEscritorio* tmp = this->Primero;
         do {
-            if(nuevo->numero > tmp->numero && nuevo->numero < tmp->siguiente->numero)//Se ingresa en medio de dos nodos
+            if(this->Primero == this->Ultimo)
+            {
+                this->Primero->siguiente = nuevo;
+                nuevo->anterior = this->Primero;
+                this->Ultimo = nuevo;
+                free(tmp);
+                return;
+            }
+            else if(tmp->siguiente == nullptr)
+            {
+                this->Ultimo->siguiente = nuevo;
+                nuevo->anterior = this->Ultimo;
+                this->Ultimo = nuevo;
+                free(tmp);
+                return;
+            }
+            else if(nuevo->numero > tmp->numero && nuevo->numero < tmp->siguiente->numero)
             {
                 tmp->siguiente->anterior = nuevo;
                 nuevo->siguiente = tmp->siguiente;
@@ -28,23 +44,6 @@ void ListaEscritorios::AgregarEscritorio(NodoEscritorio* nuevo)
                 free(tmp);
                 return;
             }
-            else if(tmp->siguiente == nullptr)//Se ingresa al final de la lista
-            {
-                tmp->siguiente = nuevo;
-                nuevo->anterior = tmp;
-                this->Ultimo = nuevo;
-                free(tmp);
-                return;
-            }
-            else if(this->Primero == this->Ultimo)//Solo hay un elemento en la lista
-            {
-                this->Primero->siguiente = nuevo;
-                nuevo->anterior = this->Primero;
-                this->Ultimo = nuevo;
-                free(tmp);
-                return;
-            }
-
             tmp = tmp->siguiente;
         } while (tmp != nullptr);
     }
@@ -52,50 +51,89 @@ void ListaEscritorios::AgregarEscritorio(NodoEscritorio* nuevo)
 
 void ListaEscritorios::CargarEscritorios(int NoEscritorios)
 {
-    for(int i = 0 ; i < NoEscritorios ; i++)
+    if(NoEscritorios > 0)
     {
-        AgregarEscritorio(new NodoEscritorio(i));
+        AgregarEscritorio(new NodoEscritorio(NoEscritorios));
+        CargarEscritorios(NoEscritorios - 1);
     }
 }
 
-bool ListaEscritorios::HayLugares()
+//bool ListaEscritorios::HayLugares()
+//{
+//    if(this->Primero != nullptr)
+//    {
+//        NodoEscritorio* tmp = this->Primero;
+//        do {
+//            if(tmp->PersonasEnCola < 10)
+//            {
+//                free(tmp);
+//                return true;
+//            }
+//            tmp = tmp->siguiente;
+//        } while (tmp != nullptr);
+//        free(tmp);
+//        return false;
+//    }
+//    return false;
+//}
+
+//void ListaEscritorios::CargarPersonas(ColaPersonas *colaper)
+//{
+//    NodoEscritorio* tmp = this->Primero;
+//    while (HayLugares()) {
+
+//        do {
+
+//            if(tmp->PersonasEnCola < 10)
+//            {
+//                if(colaper->Primero != nullptr)
+//                {
+//                    tmp->Cola->IngresarPersona2(colaper->SacarPersona());
+//                    tmp->PersonasEnCola++;
+//                }
+//            }
+//            tmp = tmp->siguiente;
+
+//        } while (tmp != nullptr);
+
+//    }
+//    free(tmp);
+//}
+
+string ListaEscritorios::GenerarSubgrafo()
 {
+    string subgrafo = "subgraph cluster_Escritorios{\n";
+
+    subgrafo += "node [shape=box, style=filled];\n";
+    subgrafo += "label = \"Lista de Escritorios\";\n";
+    subgrafo += "color = blue;\n";
+
     if(this->Primero != nullptr)
     {
         NodoEscritorio* tmp = this->Primero;
+
         do {
-            if(tmp->PersonasEnCola < 10)
+            subgrafo += "\"Escritorio: " + to_string(tmp->numero) + "\"";
+            if(tmp->siguiente != nullptr)
             {
-                free(tmp);
-                return true;
+                subgrafo += " -> ";
+
+                subgrafo += "\"Escritorio: " + to_string(tmp->siguiente->numero) + "\"";
+
+                subgrafo += "\n";
+
+                subgrafo = subgrafo + "\"Escritorio: " + to_string(tmp->siguiente->numero) + "\"";
+
+                subgrafo += " -> ";
+
+                subgrafo += "\"Escritorio: " + to_string(tmp->numero) + "\"";
             }
+
             tmp = tmp->siguiente;
         } while (tmp != nullptr);
         free(tmp);
-        return false;
     }
-    return false;
-}
 
-void ListaEscritorios::CargarPersonas(ColaPersonas *colaper)
-{
-    NodoEscritorio* tmp = this->Primero;
-    while (HayLugares()) {
-
-        do {
-
-            if(tmp->PersonasEnCola < 10)
-            {
-                if(colaper->Primero != nullptr)
-                {
-                    tmp->Cola->IngresarPersona2(colaper->SacarPersona());
-                    tmp->PersonasEnCola++;
-                }
-            }
-            tmp = tmp->siguiente;
-
-        } while (tmp != nullptr);
-
-    }
-    free(tmp);
+    subgrafo = subgrafo + "\n" + "}" + "\n\n";
+    return subgrafo;
 }

@@ -8,5 +8,7 @@ INPUT(
 ./release\colapersonas.o
 ./release\nodoescritorio.o
 ./release\listaescritorios.o
+./release\nodomaleta.o
+./release\listamaletas.o
 ./release\moc_mainwindow.o
 );

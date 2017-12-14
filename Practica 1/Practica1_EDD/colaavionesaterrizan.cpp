@@ -136,6 +136,10 @@ string ColaAvionesAterrizan::GenerarSubGrafo()
 
         free(aux);
     }
+    else
+    {
+        subgrafo += "\"Aviones Vacio\"\n";
+    }
 
     subgrafo = subgrafo + "\n" + "}" + "\n\n";
     return subgrafo;

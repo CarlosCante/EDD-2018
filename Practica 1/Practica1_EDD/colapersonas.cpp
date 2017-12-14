@@ -1,6 +1,9 @@
 #include <colapersonas.h>
+#include <listamaletas.h>
+
 
 using namespace std;
+
 
 ColaPersonas::ColaPersonas()
 {
@@ -19,10 +22,10 @@ NodoPersona* ColaPersonas::GenerarPersona()
     return tmp;
 }
 
-void ColaPersonas::IngresarPersona()
+void ColaPersonas::IngresarPersona(ListaMaletas* l)
 {
     NodoPersona* nuevo = GenerarPersona();
-
+    l->CargarMaletas(nuevo->NoMaletas);
     if(this->Primero == nullptr)
     {
         this->Primero = nuevo;
@@ -49,12 +52,12 @@ void ColaPersonas::IngresarPersona2(NodoPersona *nueva)
     }
 }
 
-void ColaPersonas::CargarPasajeros(int Cantidad)
+void ColaPersonas::CargarPasajeros(int Cantidad, ListaMaletas *l)
 {
     if(Cantidad > 0)
     {
-        IngresarPersona();
-        CargarPasajeros(Cantidad - 1);
+        IngresarPersona(l);
+        CargarPasajeros(Cantidad - 1, l);
     }
 }
 

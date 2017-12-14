@@ -32,7 +32,9 @@ SOURCES += \
     nodopersona.cpp \
     colapersonas.cpp \
     nodoescritorio.cpp \
-    listaescritorios.cpp
+    listaescritorios.cpp \
+    nodomaleta.cpp \
+    listamaletas.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -42,7 +44,9 @@ HEADERS += \
     nodopersona.h \
     colapersonas.h \
     listaescritorios.h \
-    nodoescritorio.h
+    nodoescritorio.h \
+    nodomaleta.h \
+    listamaletas.h
 
 FORMS += \
         mainwindow.ui

@@ -8,6 +8,7 @@
 ColaAvionesAterrizan* CAA = new ColaAvionesAterrizan();
 ColaPersonas* CP = new ColaPersonas();
 ListaEscritorios* LE = new ListaEscritorios();
+ListaMaletas* LM = new ListaMaletas();
 
 int NumeroAviones;
 int NumEscritorios;
@@ -27,10 +28,11 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_2_clicked()
 {
     NumeroAviones = ui->NoAviones->text().toInt();
+    NumEscritorios = ui->NoEscritorios->text().toInt();
+
+    LE->CargarEscritorios(NumEscritorios);
     CAA->IngresarAvion();
 
-//    NumEscritorios = ui->NoEscritorios->text().toInt();
-//    LE->CargarEscritorios(NumEscritorios);
 
     NumeroAviones--;
     ActualizarGrafica();
@@ -55,6 +57,7 @@ void MainWindow::ActualizarGrafica()
     myfile << CAA->GenerarSubGrafo();
     myfile << CP->GenerarSubGrafo(0);
     myfile << LE->GenerarSubgrafo();
+    myfile << LM->GenerarSubGrafo();
 
     myfile << "}\n";
     myfile.close();
@@ -84,7 +87,7 @@ void MainWindow::SiguienteTurnoAvionesAterrizan()
 
         if(CAA->Ultimo->Turnos_D <= 0)
         {
-            CP->CargarPasajeros(CAA->Ultimo->No_Pasajeros);
+            CP->CargarPasajeros(CAA->Ultimo->No_Pasajeros,LM);
             CAA->SacarAvion();
         }
     }

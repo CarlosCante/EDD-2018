@@ -5,6 +5,7 @@
 #include <colaavionesaterrizan.h>
 #include <colapersonas.h>
 #include <listaescritorios.h>
+#include <listamaletas.h>
 
 
 namespace Ui {

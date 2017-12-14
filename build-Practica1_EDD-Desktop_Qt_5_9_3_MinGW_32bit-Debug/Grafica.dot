@@ -3,371 +3,321 @@ subgraph cluster_ColaAvionesLlegan {
 node [shape=box, style=filled];
 label = "Llegada de Aviones";
 color = blue;
-
+"Avion 2
+Turdos Desabordaje: 1
+Numero Pasajeros: 5
+Turdos Mantenimiento: 3"
 }
 
 subgraph cluster_ColaPersonas0{
 node [shape=box, style=filled];
 label = "Cola de Personas";
 color = blue;
-"Persona 59
-No. Maletas: 3
-No. Documentos: 4
-Turdos para Registro: 3" -> "Persona 58
-No. Maletas: 4
-No. Documentos: 9
-Turdos para Registro: 1""Persona 58
-No. Maletas: 4
-No. Documentos: 9
-Turdos para Registro: 1" -> "Persona 57
-No. Maletas: 3
-No. Documentos: 8
-Turdos para Registro: 3""Persona 57
-No. Maletas: 3
-No. Documentos: 8
-Turdos para Registro: 3" -> "Persona 56
+"Persona 34
 No. Maletas: 1
 No. Documentos: 5
-Turdos para Registro: 3""Persona 56
-No. Maletas: 1
-No. Documentos: 5
-Turdos para Registro: 3" -> "Persona 55
-No. Maletas: 2
-No. Documentos: 3
-Turdos para Registro: 2""Persona 55
-No. Maletas: 2
-No. Documentos: 3
-Turdos para Registro: 2" -> "Persona 54
+Turdos para Registro: 2" -> "Persona 33
 No. Maletas: 4
-No. Documentos: 5
-Turdos para Registro: 3""Persona 54
-No. Maletas: 4
-No. Documentos: 5
-Turdos para Registro: 3" -> "Persona 53
-No. Maletas: 3
-No. Documentos: 7
-Turdos para Registro: 3""Persona 53
-No. Maletas: 3
-No. Documentos: 7
-Turdos para Registro: 3" -> "Persona 52
-No. Maletas: 2
-No. Documentos: 6
-Turdos para Registro: 2""Persona 52
-No. Maletas: 2
-No. Documentos: 6
-Turdos para Registro: 2" -> "Persona 51
-No. Maletas: 1
-No. Documentos: 6
-Turdos para Registro: 2""Persona 51
-No. Maletas: 1
-No. Documentos: 6
-Turdos para Registro: 2" -> "Persona 50
-No. Maletas: 2
-No. Documentos: 5
-Turdos para Registro: 1""Persona 50
-No. Maletas: 2
-No. Documentos: 5
-Turdos para Registro: 1" -> "Persona 49
-No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 1""Persona 49
-No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 1" -> "Persona 48
-No. Maletas: 2
-No. Documentos: 3
-Turdos para Registro: 3""Persona 48
-No. Maletas: 2
-No. Documentos: 3
-Turdos para Registro: 3" -> "Persona 47
-No. Maletas: 4
-No. Documentos: 10
-Turdos para Registro: 1""Persona 47
-No. Maletas: 4
-No. Documentos: 10
-Turdos para Registro: 1" -> "Persona 46
-No. Maletas: 2
-No. Documentos: 4
-Turdos para Registro: 1""Persona 46
-No. Maletas: 2
-No. Documentos: 4
-Turdos para Registro: 1" -> "Persona 45
-No. Maletas: 4
-No. Documentos: 1
-Turdos para Registro: 2""Persona 45
-No. Maletas: 4
-No. Documentos: 1
-Turdos para Registro: 2" -> "Persona 44
-No. Maletas: 4
-No. Documentos: 5
-Turdos para Registro: 2""Persona 44
-No. Maletas: 4
-No. Documentos: 5
-Turdos para Registro: 2" -> "Persona 43
-No. Maletas: 3
-No. Documentos: 4
-Turdos para Registro: 2""Persona 43
-No. Maletas: 3
-No. Documentos: 4
-Turdos para Registro: 2" -> "Persona 42
-No. Maletas: 4
-No. Documentos: 9
-Turdos para Registro: 3""Persona 42
-No. Maletas: 4
-No. Documentos: 9
-Turdos para Registro: 3" -> "Persona 41
-No. Maletas: 1
-No. Documentos: 9
-Turdos para Registro: 2""Persona 41
-No. Maletas: 1
-No. Documentos: 9
-Turdos para Registro: 2" -> "Persona 40
-No. Maletas: 2
-No. Documentos: 8
-Turdos para Registro: 3""Persona 40
-No. Maletas: 2
-No. Documentos: 8
-Turdos para Registro: 3" -> "Persona 39
-No. Maletas: 1
-No. Documentos: 7
-Turdos para Registro: 1""Persona 39
-No. Maletas: 1
-No. Documentos: 7
-Turdos para Registro: 1" -> "Persona 38
-No. Maletas: 3
-No. Documentos: 6
-Turdos para Registro: 2""Persona 38
-No. Maletas: 3
-No. Documentos: 6
-Turdos para Registro: 2" -> "Persona 37
-No. Maletas: 4
-No. Documentos: 1
-Turdos para Registro: 3""Persona 37
-No. Maletas: 4
-No. Documentos: 1
-Turdos para Registro: 3" -> "Persona 36
-No. Maletas: 2
-No. Documentos: 3
-Turdos para Registro: 3""Persona 36
-No. Maletas: 2
-No. Documentos: 3
-Turdos para Registro: 3" -> "Persona 35
-No. Maletas: 3
 No. Documentos: 2
-Turdos para Registro: 3""Persona 35
-No. Maletas: 3
+Turdos para Registro: 1""Persona 33
+No. Maletas: 4
 No. Documentos: 2
-Turdos para Registro: 3" -> "Persona 34
+Turdos para Registro: 1" -> "Persona 32
 No. Maletas: 1
 No. Documentos: 10
-Turdos para Registro: 1""Persona 34
+Turdos para Registro: 1""Persona 32
 No. Maletas: 1
 No. Documentos: 10
-Turdos para Registro: 1" -> "Persona 33
-No. Maletas: 1
-No. Documentos: 2
-Turdos para Registro: 3""Persona 33
-No. Maletas: 1
-No. Documentos: 2
-Turdos para Registro: 3" -> "Persona 32
-No. Maletas: 4
+Turdos para Registro: 1" -> "Persona 31
+No. Maletas: 3
 No. Documentos: 1
-Turdos para Registro: 3""Persona 32
-No. Maletas: 4
+Turdos para Registro: 2""Persona 31
+No. Maletas: 3
 No. Documentos: 1
-Turdos para Registro: 3" -> "Persona 31
-No. Maletas: 4
-No. Documentos: 7
-Turdos para Registro: 3""Persona 31
-No. Maletas: 4
-No. Documentos: 7
-Turdos para Registro: 3" -> "Persona 30
-No. Maletas: 1
-No. Documentos: 6
+Turdos para Registro: 2" -> "Persona 30
+No. Maletas: 3
+No. Documentos: 2
 Turdos para Registro: 2""Persona 30
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 2" -> "Persona 29
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2""Persona 29
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 28
 No. Maletas: 1
 No. Documentos: 6
-Turdos para Registro: 2" -> "Persona 29
-No. Maletas: 4
-No. Documentos: 4
-Turdos para Registro: 3""Persona 29
-No. Maletas: 4
-No. Documentos: 4
-Turdos para Registro: 3" -> "Persona 28
-No. Maletas: 1
-No. Documentos: 10
 Turdos para Registro: 2""Persona 28
 No. Maletas: 1
-No. Documentos: 10
+No. Documentos: 6
 Turdos para Registro: 2" -> "Persona 27
-No. Maletas: 1
-No. Documentos: 8
-Turdos para Registro: 2""Persona 27
-No. Maletas: 1
-No. Documentos: 8
-Turdos para Registro: 2" -> "Persona 26
-No. Maletas: 2
-No. Documentos: 10
-Turdos para Registro: 1""Persona 26
-No. Maletas: 2
-No. Documentos: 10
-Turdos para Registro: 1" -> "Persona 25
 No. Maletas: 3
-No. Documentos: 9
-Turdos para Registro: 1""Persona 25
-No. Maletas: 3
-No. Documentos: 9
-Turdos para Registro: 1" -> "Persona 24
-No. Maletas: 1
 No. Documentos: 7
+Turdos para Registro: 3""Persona 27
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 26
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 2""Persona 26
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 25
+No. Maletas: 1
+No. Documentos: 6
+Turdos para Registro: 3""Persona 25
+No. Maletas: 1
+No. Documentos: 6
+Turdos para Registro: 3" -> "Persona 24
+No. Maletas: 1
+No. Documentos: 1
 Turdos para Registro: 2""Persona 24
 No. Maletas: 1
-No. Documentos: 7
+No. Documentos: 1
 Turdos para Registro: 2" -> "Persona 23
 No. Maletas: 4
 No. Documentos: 6
-Turdos para Registro: 2""Persona 23
+Turdos para Registro: 1""Persona 23
 No. Maletas: 4
 No. Documentos: 6
-Turdos para Registro: 2" -> "Persona 22
+Turdos para Registro: 1" -> "Persona 22
 No. Maletas: 3
 No. Documentos: 8
-Turdos para Registro: 1""Persona 22
+Turdos para Registro: 3""Persona 22
 No. Maletas: 3
 No. Documentos: 8
-Turdos para Registro: 1" -> "Persona 21
-No. Maletas: 2
-No. Documentos: 4
-Turdos para Registro: 1""Persona 21
-No. Maletas: 2
-No. Documentos: 4
-Turdos para Registro: 1" -> "Persona 20
+Turdos para Registro: 3" -> "Persona 21
 No. Maletas: 3
-No. Documentos: 10
+No. Documentos: 5
+Turdos para Registro: 2""Persona 21
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 2" -> "Persona 20
+No. Maletas: 2
+No. Documentos: 7
 Turdos para Registro: 1""Persona 20
-No. Maletas: 3
-No. Documentos: 10
+No. Maletas: 2
+No. Documentos: 7
 Turdos para Registro: 1" -> "Persona 19
 No. Maletas: 3
 No. Documentos: 4
-Turdos para Registro: 1""Persona 19
+Turdos para Registro: 3""Persona 19
 No. Maletas: 3
 No. Documentos: 4
-Turdos para Registro: 1" -> "Persona 18
-No. Maletas: 3
-No. Documentos: 2
+Turdos para Registro: 3" -> "Persona 18
+No. Maletas: 2
+No. Documentos: 6
 Turdos para Registro: 3""Persona 18
-No. Maletas: 3
-No. Documentos: 2
+No. Maletas: 2
+No. Documentos: 6
 Turdos para Registro: 3" -> "Persona 17
 No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 2""Persona 17
+No. Documentos: 5
+Turdos para Registro: 1""Persona 17
 No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 2" -> "Persona 16
-No. Maletas: 4
-No. Documentos: 8
-Turdos para Registro: 3""Persona 16
-No. Maletas: 4
-No. Documentos: 8
-Turdos para Registro: 3" -> "Persona 15
+No. Documentos: 5
+Turdos para Registro: 1" -> "Persona 16
 No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 1""Persona 16
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 15
+No. Maletas: 1
 No. Documentos: 7
 Turdos para Registro: 3""Persona 15
-No. Maletas: 3
+No. Maletas: 1
 No. Documentos: 7
 Turdos para Registro: 3" -> "Persona 14
+No. Maletas: 4
+No. Documentos: 1
+Turdos para Registro: 1""Persona 14
+No. Maletas: 4
+No. Documentos: 1
+Turdos para Registro: 1" -> "Persona 13
 No. Maletas: 1
-No. Documentos: 3
-Turdos para Registro: 2""Persona 14
+No. Documentos: 6
+Turdos para Registro: 3""Persona 13
 No. Maletas: 1
-No. Documentos: 3
-Turdos para Registro: 2" -> "Persona 13
-No. Maletas: 1
-No. Documentos: 3
-Turdos para Registro: 2""Persona 13
-No. Maletas: 1
-No. Documentos: 3
-Turdos para Registro: 2" -> "Persona 12
-No. Maletas: 3
-No. Documentos: 5
-Turdos para Registro: 2""Persona 12
-No. Maletas: 3
-No. Documentos: 5
-Turdos para Registro: 2" -> "Persona 11
+No. Documentos: 6
+Turdos para Registro: 3" -> "Persona 12
 No. Maletas: 2
-No. Documentos: 5
+No. Documentos: 7
+Turdos para Registro: 3""Persona 12
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 11
+No. Maletas: 3
+No. Documentos: 6
 Turdos para Registro: 3""Persona 11
-No. Maletas: 2
-No. Documentos: 5
+No. Maletas: 3
+No. Documentos: 6
 Turdos para Registro: 3" -> "Persona 10
 No. Maletas: 1
-No. Documentos: 10
+No. Documentos: 5
 Turdos para Registro: 3""Persona 10
 No. Maletas: 1
-No. Documentos: 10
+No. Documentos: 5
 Turdos para Registro: 3" -> "Persona 9
-No. Maletas: 1
-No. Documentos: 8
-Turdos para Registro: 3""Persona 9
-No. Maletas: 1
-No. Documentos: 8
-Turdos para Registro: 3" -> "Persona 8
-No. Maletas: 1
-No. Documentos: 10
-Turdos para Registro: 3""Persona 8
-No. Maletas: 1
-No. Documentos: 10
-Turdos para Registro: 3" -> "Persona 7
+No. Maletas: 4
+No. Documentos: 3
+Turdos para Registro: 2""Persona 9
+No. Maletas: 4
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 8
 No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 1""Persona 7
+No. Documentos: 10
+Turdos para Registro: 2""Persona 8
 No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 1" -> "Persona 6
-No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 7
+No. Maletas: 2
 No. Documentos: 2
+Turdos para Registro: 3""Persona 7
+No. Maletas: 2
+No. Documentos: 2
+Turdos para Registro: 3" -> "Persona 6
+No. Maletas: 4
+No. Documentos: 3
 Turdos para Registro: 2""Persona 6
-No. Maletas: 3
-No. Documentos: 2
+No. Maletas: 4
+No. Documentos: 3
 Turdos para Registro: 2" -> "Persona 5
-No. Maletas: 2
-No. Documentos: 5
-Turdos para Registro: 1""Persona 5
-No. Maletas: 2
-No. Documentos: 5
-Turdos para Registro: 1" -> "Persona 4
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 2""Persona 5
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 2" -> "Persona 4
 No. Maletas: 3
-No. Documentos: 8
-Turdos para Registro: 3""Persona 4
-No. Maletas: 3
-No. Documentos: 8
-Turdos para Registro: 3" -> "Persona 3
-No. Maletas: 2
 No. Documentos: 3
+Turdos para Registro: 2""Persona 4
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 3
+No. Maletas: 4
+No. Documentos: 8
 Turdos para Registro: 3""Persona 3
-No. Maletas: 2
-No. Documentos: 3
+No. Maletas: 4
+No. Documentos: 8
 Turdos para Registro: 3" -> "Persona 2
-No. Maletas: 1
-No. Documentos: 1
-Turdos para Registro: 1""Persona 2
-No. Maletas: 1
-No. Documentos: 1
-Turdos para Registro: 1" -> "Persona 1
-No. Maletas: 4
-No. Documentos: 4
-Turdos para Registro: 3""Persona 1
-No. Maletas: 4
-No. Documentos: 4
-Turdos para Registro: 3"
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 3""Persona 2
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 3" -> "Persona 1
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 2""Persona 1
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 2"
 }
 
 subgraph cluster_Escritorios{
 node [shape=box, style=filled];
 label = "Lista de Escritorios";
 color = blue;
+"Escritorio: 0" -> "Escritorio: 1"
+"Escritorio: 1" -> "Escritorio: 0""Escritorio: 1" -> "Escritorio: 2"
+"Escritorio: 2" -> "Escritorio: 1""Escritorio: 2" -> "Escritorio: 3"
+"Escritorio: 3" -> "Escritorio: 2""Escritorio: 3" -> "Escritorio: 4"
+"Escritorio: 4" -> "Escritorio: 3""Escritorio: 4"
+}
+
+subgraph cluster_Maletas{
+node [shape=box, style=filled];
+label = "Lista de Maletas";
+color = blue;
+"Maleta: 1" -> "Maleta: 2"
+"Maleta: 2" -> "Maleta: 1""Maleta: 2" -> "Maleta: 3"
+"Maleta: 3" -> "Maleta: 2""Maleta: 3" -> "Maleta: 4"
+"Maleta: 4" -> "Maleta: 3""Maleta: 4" -> "Maleta: 5"
+"Maleta: 5" -> "Maleta: 4""Maleta: 5" -> "Maleta: 6"
+"Maleta: 6" -> "Maleta: 5""Maleta: 6" -> "Maleta: 7"
+"Maleta: 7" -> "Maleta: 6""Maleta: 7" -> "Maleta: 8"
+"Maleta: 8" -> "Maleta: 7""Maleta: 8" -> "Maleta: 9"
+"Maleta: 9" -> "Maleta: 8""Maleta: 9" -> "Maleta: 10"
+"Maleta: 10" -> "Maleta: 9""Maleta: 10" -> "Maleta: 11"
+"Maleta: 11" -> "Maleta: 10""Maleta: 11" -> "Maleta: 12"
+"Maleta: 12" -> "Maleta: 11""Maleta: 12" -> "Maleta: 13"
+"Maleta: 13" -> "Maleta: 12""Maleta: 13" -> "Maleta: 14"
+"Maleta: 14" -> "Maleta: 13""Maleta: 14" -> "Maleta: 15"
+"Maleta: 15" -> "Maleta: 14""Maleta: 15" -> "Maleta: 16"
+"Maleta: 16" -> "Maleta: 15""Maleta: 16" -> "Maleta: 17"
+"Maleta: 17" -> "Maleta: 16""Maleta: 17" -> "Maleta: 18"
+"Maleta: 18" -> "Maleta: 17""Maleta: 18" -> "Maleta: 19"
+"Maleta: 19" -> "Maleta: 18""Maleta: 19" -> "Maleta: 20"
+"Maleta: 20" -> "Maleta: 19""Maleta: 20" -> "Maleta: 21"
+"Maleta: 21" -> "Maleta: 20""Maleta: 21" -> "Maleta: 22"
+"Maleta: 22" -> "Maleta: 21""Maleta: 22" -> "Maleta: 23"
+"Maleta: 23" -> "Maleta: 22""Maleta: 23" -> "Maleta: 24"
+"Maleta: 24" -> "Maleta: 23""Maleta: 24" -> "Maleta: 25"
+"Maleta: 25" -> "Maleta: 24""Maleta: 25" -> "Maleta: 26"
+"Maleta: 26" -> "Maleta: 25""Maleta: 26" -> "Maleta: 27"
+"Maleta: 27" -> "Maleta: 26""Maleta: 27" -> "Maleta: 28"
+"Maleta: 28" -> "Maleta: 27""Maleta: 28" -> "Maleta: 29"
+"Maleta: 29" -> "Maleta: 28""Maleta: 29" -> "Maleta: 30"
+"Maleta: 30" -> "Maleta: 29""Maleta: 30" -> "Maleta: 31"
+"Maleta: 31" -> "Maleta: 30""Maleta: 31" -> "Maleta: 32"
+"Maleta: 32" -> "Maleta: 31""Maleta: 32" -> "Maleta: 33"
+"Maleta: 33" -> "Maleta: 32""Maleta: 33" -> "Maleta: 34"
+"Maleta: 34" -> "Maleta: 33""Maleta: 34" -> "Maleta: 35"
+"Maleta: 35" -> "Maleta: 34""Maleta: 35" -> "Maleta: 36"
+"Maleta: 36" -> "Maleta: 35""Maleta: 36" -> "Maleta: 37"
+"Maleta: 37" -> "Maleta: 36""Maleta: 37" -> "Maleta: 38"
+"Maleta: 38" -> "Maleta: 37""Maleta: 38" -> "Maleta: 39"
+"Maleta: 39" -> "Maleta: 38""Maleta: 39" -> "Maleta: 40"
+"Maleta: 40" -> "Maleta: 39""Maleta: 40" -> "Maleta: 41"
+"Maleta: 41" -> "Maleta: 40""Maleta: 41" -> "Maleta: 42"
+"Maleta: 42" -> "Maleta: 41""Maleta: 42" -> "Maleta: 43"
+"Maleta: 43" -> "Maleta: 42""Maleta: 43" -> "Maleta: 44"
+"Maleta: 44" -> "Maleta: 43""Maleta: 44" -> "Maleta: 45"
+"Maleta: 45" -> "Maleta: 44""Maleta: 45" -> "Maleta: 46"
+"Maleta: 46" -> "Maleta: 45""Maleta: 46" -> "Maleta: 47"
+"Maleta: 47" -> "Maleta: 46""Maleta: 47" -> "Maleta: 48"
+"Maleta: 48" -> "Maleta: 47""Maleta: 48" -> "Maleta: 49"
+"Maleta: 49" -> "Maleta: 48""Maleta: 49" -> "Maleta: 50"
+"Maleta: 50" -> "Maleta: 49""Maleta: 50" -> "Maleta: 51"
+"Maleta: 51" -> "Maleta: 50""Maleta: 51" -> "Maleta: 52"
+"Maleta: 52" -> "Maleta: 51""Maleta: 52" -> "Maleta: 53"
+"Maleta: 53" -> "Maleta: 52""Maleta: 53" -> "Maleta: 54"
+"Maleta: 54" -> "Maleta: 53""Maleta: 54" -> "Maleta: 55"
+"Maleta: 55" -> "Maleta: 54""Maleta: 55" -> "Maleta: 56"
+"Maleta: 56" -> "Maleta: 55""Maleta: 56" -> "Maleta: 57"
+"Maleta: 57" -> "Maleta: 56""Maleta: 57" -> "Maleta: 58"
+"Maleta: 58" -> "Maleta: 57""Maleta: 58" -> "Maleta: 59"
+"Maleta: 59" -> "Maleta: 58""Maleta: 59" -> "Maleta: 60"
+"Maleta: 60" -> "Maleta: 59""Maleta: 60" -> "Maleta: 61"
+"Maleta: 61" -> "Maleta: 60""Maleta: 61" -> "Maleta: 62"
+"Maleta: 62" -> "Maleta: 61""Maleta: 62" -> "Maleta: 63"
+"Maleta: 63" -> "Maleta: 62""Maleta: 63" -> "Maleta: 64"
+"Maleta: 64" -> "Maleta: 63""Maleta: 64" -> "Maleta: 65"
+"Maleta: 65" -> "Maleta: 64""Maleta: 65" -> "Maleta: 66"
+"Maleta: 66" -> "Maleta: 65""Maleta: 66" -> "Maleta: 67"
+"Maleta: 67" -> "Maleta: 66""Maleta: 67" -> "Maleta: 68"
+"Maleta: 68" -> "Maleta: 67""Maleta: 68" -> "Maleta: 69"
+"Maleta: 69" -> "Maleta: 68""Maleta: 69" -> "Maleta: 70"
+"Maleta: 70" -> "Maleta: 69""Maleta: 70" -> "Maleta: 71"
+"Maleta: 71" -> "Maleta: 70""Maleta: 71" -> "Maleta: 72"
+"Maleta: 72" -> "Maleta: 71""Maleta: 72" -> "Maleta: 73"
+"Maleta: 73" -> "Maleta: 72""Maleta: 73" -> "Maleta: 74"
+"Maleta: 74" -> "Maleta: 73""Maleta: 74" -> "Maleta: 75"
+"Maleta: 75" -> "Maleta: 74""Maleta: 75" -> "Maleta: 76"
+"Maleta: 76" -> "Maleta: 75""Maleta: 76" -> "Maleta: 77"
+"Maleta: 77" -> "Maleta: 76""Maleta: 77" -> "Maleta: 78"
+"Maleta: 78" -> "Maleta: 77""Maleta: 78" -> "Maleta: 79"
+"Maleta: 79" -> "Maleta: 78""Maleta: 79" -> "Maleta: 80"
+"Maleta: 80" -> "Maleta: 79""Maleta: 80" -> "Maleta: 81"
+"Maleta: 81" -> "Maleta: 80""Maleta: 81" -> "Maleta: 82"
+"Maleta: 82" -> "Maleta: 81""Maleta: 82" -> "Maleta: 83"
+"Maleta: 83" -> "Maleta: 82""Maleta: 83" -> "Maleta: 84"
+"Maleta: 84" -> "Maleta: 83""Maleta: 84"
+"Maleta: 1" -> "Maleta: 84"
+"Maleta: 84" -> "Maleta: 1"
 
 }
 

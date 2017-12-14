@@ -14,14 +14,10 @@ struct ListaEscritorios
 
     ListaEscritorios();
 
-    void AgregarEscritorio(NodoEscritorio *nuevo);
-
+    void AgregarEscritorio(int id);
     void CargarEscritorios(int NoEscritorios);
-
     string GenerarSubgrafo();
-
     void CargarPersonas(ColaPersonas* colaper);
-
     bool HayLugares();
 };
 

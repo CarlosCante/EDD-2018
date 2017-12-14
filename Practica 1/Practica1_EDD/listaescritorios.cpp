@@ -1,5 +1,7 @@
 #include <listaescritorios.h>
 
+#include <QDebug>
+
 using namespace std;
 
 ListaEscritorios::ListaEscritorios()
@@ -8,40 +10,55 @@ ListaEscritorios::ListaEscritorios()
     this->Ultimo = nullptr;
 }
 
-void ListaEscritorios::AgregarEscritorio(NodoEscritorio* nuevo)
+void ListaEscritorios::AgregarEscritorio(int id)
 {
+    NodoEscritorio* nuevo = new NodoEscritorio(id);
+
     if(this->Primero == nullptr)
     {
         this->Primero = nuevo;
         this->Ultimo = nuevo;
+        return;
+    }
+    else if(this->Primero == this->Ultimo)
+    {
+        if(nuevo->numero > this->Primero->numero)
+        {
+            this->Primero->siguiente = nuevo;
+            nuevo->anterior = this->Primero;
+            this->Ultimo = nuevo;
+            return;
+        }
+        else if(nuevo->numero < this->Primero->numero)
+        {
+            nuevo->siguiente = this->Primero;
+            this->Primero->anterior = nuevo;
+            this->Primero = nuevo;
+        }
     }
     else
     {
         NodoEscritorio* tmp = this->Primero;
         do {
-            if(this->Primero == this->Ultimo)
-            {
-                this->Primero->siguiente = nuevo;
-                nuevo->anterior = this->Primero;
-                this->Ultimo = nuevo;
-                free(tmp);
-                return;
-            }
-            else if(tmp->siguiente == nullptr)
+            if(tmp == this->Ultimo)
             {
                 this->Ultimo->siguiente = nuevo;
                 nuevo->anterior = this->Ultimo;
                 this->Ultimo = nuevo;
-                free(tmp);
                 return;
+            }
+            else if(tmp == this->Primero && nuevo->numero < this->Primero->numero)
+            {
+                nuevo->siguiente = this->Primero;
+                this->Primero->anterior = nuevo;
+                this->Primero = nuevo;
             }
             else if(nuevo->numero > tmp->numero && nuevo->numero < tmp->siguiente->numero)
             {
-                tmp->siguiente->anterior = nuevo;
                 nuevo->siguiente = tmp->siguiente;
-                tmp->siguiente = nuevo;
+                nuevo->siguiente->anterior = nuevo;
                 nuevo->anterior = tmp;
-                free(tmp);
+                tmp->siguiente = nuevo;
                 return;
             }
             tmp = tmp->siguiente;
@@ -51,11 +68,8 @@ void ListaEscritorios::AgregarEscritorio(NodoEscritorio* nuevo)
 
 void ListaEscritorios::CargarEscritorios(int NoEscritorios)
 {
-    if(NoEscritorios > 0)
-    {
-        AgregarEscritorio(new NodoEscritorio(NoEscritorios));
-        CargarEscritorios(NoEscritorios - 1);
-    }
+    for(int i = 0; i<NoEscritorios ; i++)
+        AgregarEscritorio(i);
 }
 
 //bool ListaEscritorios::HayLugares()

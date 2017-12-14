@@ -8,5 +8,7 @@ INPUT(
 ./debug\colapersonas.o
 ./debug\nodoescritorio.o
 ./debug\listaescritorios.o
+./debug\nodomaleta.o
+./debug\listamaletas.o
 ./debug\moc_mainwindow.o
 );

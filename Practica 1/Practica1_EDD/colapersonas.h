@@ -20,6 +20,7 @@ struct ColaPersonas
     NodoPersona* GenerarPersona();
     NodoPersona* SacarPersona();
     string GenerarSubGrafo(int NumeroCola);
+    bool EstaVacia();
 };
 
 #endif // COLAPERSONAS_H

@@ -144,4 +144,3 @@ string ColaAvionesAterrizan::GenerarSubGrafo()
     subgrafo = subgrafo + "\n" + "}" + "\n\n";
     return subgrafo;
 }
-

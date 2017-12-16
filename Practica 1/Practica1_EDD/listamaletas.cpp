@@ -16,23 +16,78 @@ void ListaMaletas::IngresarMaleta()
     {
         this->Primero = nuevo;
         this->Ultimo = nuevo;
+
+        this->Ultimo->anterior = this->Primero;
+        this->Ultimo->siguiente = this->Primero;
+
+        this->Primero->siguiente = this->Ultimo;
+        this->Primero->anterior = this->Ultimo;
+
+    }
+    else if(this->Primero == this->Ultimo)
+    {
+        this->Ultimo = nuevo;
+        this->Ultimo->anterior = this->Primero;
+        this->Ultimo->siguiente = this->Primero;
+
+        this->Primero->siguiente = this->Ultimo;
+        this->Primero->anterior = this->Ultimo;
+        return;
     }
     else
     {
-       this->Ultimo->siguiente = nuevo;
-       nuevo->anterior = this->Ultimo;
-       this->Ultimo = nuevo;
-//       this->Ultimo->siguiente = this->Primero;
-//       this->Primero->anterior = this->Ultimo;
+        this->Ultimo->siguiente = nuevo;
+        nuevo->anterior = this->Ultimo;
+
+        this->Ultimo = nuevo;
+
+        this->Ultimo->siguiente = this->Primero;
+        this->Primero->anterior = this->Ultimo;
+
+
     }
 }
 
 void ListaMaletas::CargarMaletas(int NoMaletas)
 {
-    if(NoMaletas > 0)
+    for(int i = 0 ; i < NoMaletas ; i++)
     {
-        CargarMaletas(NoMaletas - 1);
         IngresarMaleta();
+    }
+}
+
+void ListaMaletas::PopMaleta()
+{
+    if(this->Primero != nullptr)
+    {
+        if(this->Primero == this->Ultimo)
+        {
+            this->Primero = nullptr;
+            this->Ultimo = nullptr;
+            return;
+        }
+        else if(this->Primero->siguiente == this->Ultimo)
+        {
+            this->Primero = this->Ultimo;
+            this->Primero->anterior = this->Ultimo;
+            this->Ultimo->siguiente = this->Primero;
+            return;
+        }
+
+        this->Primero = this->Primero->siguiente;
+
+        this->Ultimo->siguiente = this->Primero;
+        this->Primero->anterior = this->Ultimo;
+
+
+    }
+}
+
+void ListaMaletas::SacarMaletas(int Cantidad)
+{
+    for(int i = 0 ; i < Cantidad ; i++)
+    {
+        PopMaleta();
     }
 }
 
@@ -49,8 +104,9 @@ string ListaMaletas::GenerarSubGrafo()
         NodoMaleta* tmp = this->Primero;
 
         do {
+
             subgrafo += "\"Maleta: " + to_string(tmp->id) + "\"";
-            if(tmp->siguiente != nullptr)
+            if(tmp->siguiente != this->Primero)
             {
                 subgrafo += " -> ";
 
@@ -66,13 +122,38 @@ string ListaMaletas::GenerarSubGrafo()
             }
 
             tmp = tmp->siguiente;
-        } while (tmp != nullptr);
-        free(tmp);
+        } while (tmp != this->Primero);
         subgrafo += "\n";
-        subgrafo += "\"Maleta: " + to_string(this->Primero->id) + "\" -> \"Maleta: " + to_string(this->Ultimo->id) + "\"\n" ;
-        subgrafo += "\"Maleta: " + to_string(this->Ultimo->id) + "\" -> \"Maleta: " + to_string(this->Primero->id) + "\"\n" ;
+
+        subgrafo += "\"Maleta: " + to_string(this->Primero->id) + "\"";
+        subgrafo += " -> ";
+        subgrafo += "\"Maleta: " + to_string(this->Ultimo->id) + "\"";
+
+        subgrafo += "\n";
+
+        subgrafo = subgrafo + "\"Maleta: " + to_string(this->Ultimo->id) + "\"";
+        subgrafo += " -> ";
+        subgrafo += "\"Maleta: " + to_string(this->Primero->id) + "\"";
+
     }
+
 
     subgrafo = subgrafo + "\n" + "}" + "\n\n";
     return subgrafo;
+}
+
+int ListaMaletas::CantidadDeMaletas()
+{
+    int Cantidad = 0;
+
+    if(this->Primero != nullptr)
+    {
+        NodoMaleta* tmp = this->Primero;
+        do {
+            Cantidad++;
+            tmp = tmp->siguiente;
+        } while (tmp != this->Primero);
+    }
+
+    return Cantidad;
 }

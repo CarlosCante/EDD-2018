@@ -30,8 +30,6 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QLabel *label;
-    QLineEdit *NoTurnos;
     QLineEdit *NoAviones;
     QLabel *label_2;
     QLineEdit *NoEscritorios;
@@ -50,52 +48,46 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(880, 580);
+        MainWindow->resize(1030, 709);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        label = new QLabel(centralWidget);
-        label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(10, 10, 61, 16));
-        NoTurnos = new QLineEdit(centralWidget);
-        NoTurnos->setObjectName(QStringLiteral("NoTurnos"));
-        NoTurnos->setGeometry(QRect(10, 30, 113, 20));
         NoAviones = new QLineEdit(centralWidget);
         NoAviones->setObjectName(QStringLiteral("NoAviones"));
-        NoAviones->setGeometry(QRect(130, 30, 113, 20));
+        NoAviones->setGeometry(QRect(10, 30, 113, 20));
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(130, 10, 71, 16));
+        label_2->setGeometry(QRect(10, 10, 71, 16));
         NoEscritorios = new QLineEdit(centralWidget);
         NoEscritorios->setObjectName(QStringLiteral("NoEscritorios"));
-        NoEscritorios->setGeometry(QRect(250, 30, 113, 20));
+        NoEscritorios->setGeometry(QRect(130, 30, 113, 20));
         label_3 = new QLabel(centralWidget);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(250, 10, 81, 16));
+        label_3->setGeometry(QRect(130, 10, 81, 16));
         NoEstaciones = new QLineEdit(centralWidget);
         NoEstaciones->setObjectName(QStringLiteral("NoEstaciones"));
-        NoEstaciones->setGeometry(QRect(370, 30, 113, 20));
+        NoEstaciones->setGeometry(QRect(250, 30, 113, 20));
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(370, 10, 81, 16));
+        label_4->setGeometry(QRect(250, 10, 81, 16));
         label_4->setFrameShadow(QFrame::Plain);
         label_4->setLineWidth(1);
         Diagrama = new QLabel(centralWidget);
         Diagrama->setObjectName(QStringLiteral("Diagrama"));
-        Diagrama->setGeometry(QRect(10, 60, 641, 431));
+        Diagrama->setGeometry(QRect(10, 60, 791, 561));
         Diagrama->setFrameShape(QFrame::Box);
         Consola = new QTextEdit(centralWidget);
         Consola->setObjectName(QStringLiteral("Consola"));
-        Consola->setGeometry(QRect(660, 60, 201, 431));
+        Consola->setGeometry(QRect(810, 60, 201, 561));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(370, 500, 111, 23));
+        pushButton->setGeometry(QRect(430, 630, 111, 23));
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(520, 30, 75, 23));
+        pushButton_2->setGeometry(QRect(380, 30, 75, 23));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 880, 21));
+        menuBar->setGeometry(QRect(0, 0, 1030, 21));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -112,7 +104,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "No. Turnos:", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "No. Aviones", Q_NULLPTR));
         label_3->setText(QApplication::translate("MainWindow", "No. Escritorios", Q_NULLPTR));
         label_4->setText(QApplication::translate("MainWindow", "No. Estaciones", Q_NULLPTR));

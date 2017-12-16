@@ -10,5 +10,9 @@ INPUT(
 ./debug\listaescritorios.o
 ./debug\nodomaleta.o
 ./debug\listamaletas.o
+./debug\nodomantenimiento.o
+./debug\listamantenimiento.o
+./debug\nododocumento.o
+./debug\piladocumentos.o
 ./debug\moc_mainwindow.o
 );

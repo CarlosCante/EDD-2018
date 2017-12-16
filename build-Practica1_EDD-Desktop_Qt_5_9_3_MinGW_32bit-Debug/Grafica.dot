@@ -1,323 +1,1119 @@
 digraph G {
+rankdir="UD";
 subgraph cluster_ColaAvionesLlegan {
 node [shape=box, style=filled];
 label = "Llegada de Aviones";
 color = blue;
-"Avion 2
-Turdos Desabordaje: 1
-Numero Pasajeros: 5
-Turdos Mantenimiento: 3"
+"Avion 1
+Turdos Desabordaje: 2
+Numero Pasajeros: 18
+Turdos Mantenimiento: 4"
 }
 
 subgraph cluster_ColaPersonas0{
 node [shape=box, style=filled];
 label = "Cola de Personas";
 color = blue;
-"Persona 34
-No. Maletas: 1
-No. Documentos: 5
-Turdos para Registro: 2" -> "Persona 33
-No. Maletas: 4
-No. Documentos: 2
-Turdos para Registro: 1""Persona 33
-No. Maletas: 4
-No. Documentos: 2
-Turdos para Registro: 1" -> "Persona 32
-No. Maletas: 1
-No. Documentos: 10
-Turdos para Registro: 1""Persona 32
-No. Maletas: 1
-No. Documentos: 10
-Turdos para Registro: 1" -> "Persona 31
-No. Maletas: 3
-No. Documentos: 1
-Turdos para Registro: 2""Persona 31
-No. Maletas: 3
-No. Documentos: 1
-Turdos para Registro: 2" -> "Persona 30
-No. Maletas: 3
-No. Documentos: 2
-Turdos para Registro: 2""Persona 30
-No. Maletas: 3
-No. Documentos: 2
-Turdos para Registro: 2" -> "Persona 29
-No. Maletas: 3
-No. Documentos: 7
-Turdos para Registro: 2""Persona 29
-No. Maletas: 3
-No. Documentos: 7
-Turdos para Registro: 2" -> "Persona 28
-No. Maletas: 1
-No. Documentos: 6
-Turdos para Registro: 2""Persona 28
-No. Maletas: 1
-No. Documentos: 6
-Turdos para Registro: 2" -> "Persona 27
-No. Maletas: 3
-No. Documentos: 7
-Turdos para Registro: 3""Persona 27
-No. Maletas: 3
-No. Documentos: 7
-Turdos para Registro: 3" -> "Persona 26
-No. Maletas: 3
-No. Documentos: 10
-Turdos para Registro: 2""Persona 26
-No. Maletas: 3
-No. Documentos: 10
-Turdos para Registro: 2" -> "Persona 25
-No. Maletas: 1
-No. Documentos: 6
-Turdos para Registro: 3""Persona 25
-No. Maletas: 1
-No. Documentos: 6
-Turdos para Registro: 3" -> "Persona 24
-No. Maletas: 1
-No. Documentos: 1
-Turdos para Registro: 2""Persona 24
-No. Maletas: 1
-No. Documentos: 1
-Turdos para Registro: 2" -> "Persona 23
-No. Maletas: 4
-No. Documentos: 6
-Turdos para Registro: 1""Persona 23
-No. Maletas: 4
-No. Documentos: 6
-Turdos para Registro: 1" -> "Persona 22
-No. Maletas: 3
-No. Documentos: 8
-Turdos para Registro: 3""Persona 22
-No. Maletas: 3
-No. Documentos: 8
-Turdos para Registro: 3" -> "Persona 21
-No. Maletas: 3
-No. Documentos: 5
-Turdos para Registro: 2""Persona 21
-No. Maletas: 3
-No. Documentos: 5
-Turdos para Registro: 2" -> "Persona 20
-No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 1""Persona 20
-No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 1" -> "Persona 19
-No. Maletas: 3
-No. Documentos: 4
-Turdos para Registro: 3""Persona 19
-No. Maletas: 3
-No. Documentos: 4
-Turdos para Registro: 3" -> "Persona 18
-No. Maletas: 2
-No. Documentos: 6
-Turdos para Registro: 3""Persona 18
-No. Maletas: 2
-No. Documentos: 6
-Turdos para Registro: 3" -> "Persona 17
-No. Maletas: 2
-No. Documentos: 5
-Turdos para Registro: 1""Persona 17
-No. Maletas: 2
-No. Documentos: 5
-Turdos para Registro: 1" -> "Persona 16
-No. Maletas: 3
-No. Documentos: 6
-Turdos para Registro: 1""Persona 16
-No. Maletas: 3
-No. Documentos: 6
-Turdos para Registro: 1" -> "Persona 15
-No. Maletas: 1
-No. Documentos: 7
-Turdos para Registro: 3""Persona 15
-No. Maletas: 1
-No. Documentos: 7
-Turdos para Registro: 3" -> "Persona 14
-No. Maletas: 4
-No. Documentos: 1
-Turdos para Registro: 1""Persona 14
-No. Maletas: 4
-No. Documentos: 1
-Turdos para Registro: 1" -> "Persona 13
-No. Maletas: 1
-No. Documentos: 6
-Turdos para Registro: 3""Persona 13
-No. Maletas: 1
-No. Documentos: 6
-Turdos para Registro: 3" -> "Persona 12
-No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 3""Persona 12
-No. Maletas: 2
-No. Documentos: 7
-Turdos para Registro: 3" -> "Persona 11
-No. Maletas: 3
-No. Documentos: 6
-Turdos para Registro: 3""Persona 11
-No. Maletas: 3
-No. Documentos: 6
-Turdos para Registro: 3" -> "Persona 10
-No. Maletas: 1
-No. Documentos: 5
-Turdos para Registro: 3""Persona 10
-No. Maletas: 1
-No. Documentos: 5
-Turdos para Registro: 3" -> "Persona 9
-No. Maletas: 4
-No. Documentos: 3
-Turdos para Registro: 2""Persona 9
-No. Maletas: 4
-No. Documentos: 3
-Turdos para Registro: 2" -> "Persona 8
-No. Maletas: 2
-No. Documentos: 10
-Turdos para Registro: 2""Persona 8
-No. Maletas: 2
-No. Documentos: 10
-Turdos para Registro: 2" -> "Persona 7
-No. Maletas: 2
-No. Documentos: 2
-Turdos para Registro: 3""Persona 7
-No. Maletas: 2
-No. Documentos: 2
-Turdos para Registro: 3" -> "Persona 6
-No. Maletas: 4
-No. Documentos: 3
-Turdos para Registro: 2""Persona 6
-No. Maletas: 4
-No. Documentos: 3
-Turdos para Registro: 2" -> "Persona 5
-No. Maletas: 1
-No. Documentos: 1
-Turdos para Registro: 2""Persona 5
-No. Maletas: 1
-No. Documentos: 1
-Turdos para Registro: 2" -> "Persona 4
-No. Maletas: 3
-No. Documentos: 3
-Turdos para Registro: 2""Persona 4
-No. Maletas: 3
-No. Documentos: 3
-Turdos para Registro: 2" -> "Persona 3
-No. Maletas: 4
-No. Documentos: 8
-Turdos para Registro: 3""Persona 3
-No. Maletas: 4
-No. Documentos: 8
-Turdos para Registro: 3" -> "Persona 2
-No. Maletas: 3
-No. Documentos: 9
-Turdos para Registro: 3""Persona 2
-No. Maletas: 3
-No. Documentos: 9
-Turdos para Registro: 3" -> "Persona 1
-No. Maletas: 3
-No. Documentos: 8
-Turdos para Registro: 2""Persona 1
-No. Maletas: 3
-No. Documentos: 8
-Turdos para Registro: 2"
+
 }
 
 subgraph cluster_Escritorios{
 node [shape=box, style=filled];
 label = "Lista de Escritorios";
 color = blue;
-"Escritorio: 0" -> "Escritorio: 1"
-"Escritorio: 1" -> "Escritorio: 0""Escritorio: 1" -> "Escritorio: 2"
-"Escritorio: 2" -> "Escritorio: 1""Escritorio: 2" -> "Escritorio: 3"
-"Escritorio: 3" -> "Escritorio: 2""Escritorio: 3" -> "Escritorio: 4"
-"Escritorio: 4" -> "Escritorio: 3""Escritorio: 4"
+{rank=min;"Escritorio: [
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: Z
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: Y
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: X
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: W
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: V
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: U
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: T
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: S
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: R
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: Q
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: P
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: O
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: N
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: M
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: L
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: K
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: J
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: I
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: H
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: G
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: F
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: E
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: D
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: C
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: B
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+"Escritorio: A
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 ";
+};
+"Escritorio: A
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: B
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: B
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: A
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas0{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: B
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: C
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: C
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: B
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas1{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: C
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: D
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: D
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: C
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas2{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: D
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: E
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: E
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: D
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas3{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: E
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: F
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: F
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: E
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas4{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: F
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: G
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: G
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: F
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas5{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: G
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: H
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: H
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: G
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas6{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: H
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: I
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: I
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: H
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas7{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: I
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: J
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: J
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: I
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas8{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: J
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: K
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: K
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: J
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas9{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: K
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: L
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: L
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: K
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas10{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: L
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: M
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: M
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: L
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas11{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: M
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: N
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: N
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: M
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas12{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: N
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: O
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: O
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: N
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas13{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: O
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: P
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: P
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: O
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas14{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: P
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: Q
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: Q
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: P
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas15{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: Q
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: R
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: R
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: Q
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas16{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: R
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: S
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: S
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: R
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas17{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: S
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: T
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: T
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: S
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas18{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: T
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: U
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: U
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: T
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas19{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: U
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: V
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: V
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: U
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas20{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: V
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: W
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: W
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: V
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas21{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: W
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: X
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: X
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: W
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas22{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: X
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: Y
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: Y
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: X
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas23{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: Y
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: Z
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: Z
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: Y
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas24{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: Z
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: [
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+
+"Escritorio: [
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Escritorio: Z
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas25{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: [
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+subgraph cluster_ColaPersonas26{
+node [shape=box, style=filled];
+label = "Cola de Personas";
+color = blue;
+
+}
+
+"Escritorio: A
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 0
+Sin Documentos"
+"Escritorio: B
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 1
+Sin Documentos"
+"Escritorio: C
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 2
+Sin Documentos"
+"Escritorio: D
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 3
+Sin Documentos"
+"Escritorio: E
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 4
+Sin Documentos"
+"Escritorio: F
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 5
+Sin Documentos"
+"Escritorio: G
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 6
+Sin Documentos"
+"Escritorio: H
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 7
+Sin Documentos"
+"Escritorio: I
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 8
+Sin Documentos"
+"Escritorio: J
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 9
+Sin Documentos"
+"Escritorio: K
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 10
+Sin Documentos"
+"Escritorio: L
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 11
+Sin Documentos"
+"Escritorio: M
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 12
+Sin Documentos"
+"Escritorio: N
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 13
+Sin Documentos"
+"Escritorio: O
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 14
+Sin Documentos"
+"Escritorio: P
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 15
+Sin Documentos"
+"Escritorio: Q
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 16
+Sin Documentos"
+"Escritorio: R
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 17
+Sin Documentos"
+"Escritorio: S
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 18
+Sin Documentos"
+"Escritorio: T
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 19
+Sin Documentos"
+"Escritorio: U
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 20
+Sin Documentos"
+"Escritorio: V
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 21
+Sin Documentos"
+"Escritorio: W
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 22
+Sin Documentos"
+"Escritorio: X
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 23
+Sin Documentos"
+"Escritorio: Y
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 24
+Sin Documentos"
+"Escritorio: Z
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 25
+Sin Documentos"
+"Escritorio: [
+Cliente Atendido: Ninguno 
+Estado: Libre 
+Cantidad Documentos: 0 
+Turnos Restantes: 0 "
+ -> "Pila Escritorio: 26
+Sin Documentos"
+
 }
 
 subgraph cluster_Maletas{
 node [shape=box, style=filled];
 label = "Lista de Maletas";
 color = blue;
-"Maleta: 1" -> "Maleta: 2"
-"Maleta: 2" -> "Maleta: 1""Maleta: 2" -> "Maleta: 3"
-"Maleta: 3" -> "Maleta: 2""Maleta: 3" -> "Maleta: 4"
-"Maleta: 4" -> "Maleta: 3""Maleta: 4" -> "Maleta: 5"
-"Maleta: 5" -> "Maleta: 4""Maleta: 5" -> "Maleta: 6"
-"Maleta: 6" -> "Maleta: 5""Maleta: 6" -> "Maleta: 7"
-"Maleta: 7" -> "Maleta: 6""Maleta: 7" -> "Maleta: 8"
-"Maleta: 8" -> "Maleta: 7""Maleta: 8" -> "Maleta: 9"
-"Maleta: 9" -> "Maleta: 8""Maleta: 9" -> "Maleta: 10"
-"Maleta: 10" -> "Maleta: 9""Maleta: 10" -> "Maleta: 11"
-"Maleta: 11" -> "Maleta: 10""Maleta: 11" -> "Maleta: 12"
-"Maleta: 12" -> "Maleta: 11""Maleta: 12" -> "Maleta: 13"
-"Maleta: 13" -> "Maleta: 12""Maleta: 13" -> "Maleta: 14"
-"Maleta: 14" -> "Maleta: 13""Maleta: 14" -> "Maleta: 15"
-"Maleta: 15" -> "Maleta: 14""Maleta: 15" -> "Maleta: 16"
-"Maleta: 16" -> "Maleta: 15""Maleta: 16" -> "Maleta: 17"
-"Maleta: 17" -> "Maleta: 16""Maleta: 17" -> "Maleta: 18"
-"Maleta: 18" -> "Maleta: 17""Maleta: 18" -> "Maleta: 19"
-"Maleta: 19" -> "Maleta: 18""Maleta: 19" -> "Maleta: 20"
-"Maleta: 20" -> "Maleta: 19""Maleta: 20" -> "Maleta: 21"
-"Maleta: 21" -> "Maleta: 20""Maleta: 21" -> "Maleta: 22"
-"Maleta: 22" -> "Maleta: 21""Maleta: 22" -> "Maleta: 23"
-"Maleta: 23" -> "Maleta: 22""Maleta: 23" -> "Maleta: 24"
-"Maleta: 24" -> "Maleta: 23""Maleta: 24" -> "Maleta: 25"
-"Maleta: 25" -> "Maleta: 24""Maleta: 25" -> "Maleta: 26"
-"Maleta: 26" -> "Maleta: 25""Maleta: 26" -> "Maleta: 27"
-"Maleta: 27" -> "Maleta: 26""Maleta: 27" -> "Maleta: 28"
-"Maleta: 28" -> "Maleta: 27""Maleta: 28" -> "Maleta: 29"
-"Maleta: 29" -> "Maleta: 28""Maleta: 29" -> "Maleta: 30"
-"Maleta: 30" -> "Maleta: 29""Maleta: 30" -> "Maleta: 31"
-"Maleta: 31" -> "Maleta: 30""Maleta: 31" -> "Maleta: 32"
-"Maleta: 32" -> "Maleta: 31""Maleta: 32" -> "Maleta: 33"
-"Maleta: 33" -> "Maleta: 32""Maleta: 33" -> "Maleta: 34"
-"Maleta: 34" -> "Maleta: 33""Maleta: 34" -> "Maleta: 35"
-"Maleta: 35" -> "Maleta: 34""Maleta: 35" -> "Maleta: 36"
-"Maleta: 36" -> "Maleta: 35""Maleta: 36" -> "Maleta: 37"
-"Maleta: 37" -> "Maleta: 36""Maleta: 37" -> "Maleta: 38"
-"Maleta: 38" -> "Maleta: 37""Maleta: 38" -> "Maleta: 39"
-"Maleta: 39" -> "Maleta: 38""Maleta: 39" -> "Maleta: 40"
-"Maleta: 40" -> "Maleta: 39""Maleta: 40" -> "Maleta: 41"
-"Maleta: 41" -> "Maleta: 40""Maleta: 41" -> "Maleta: 42"
-"Maleta: 42" -> "Maleta: 41""Maleta: 42" -> "Maleta: 43"
-"Maleta: 43" -> "Maleta: 42""Maleta: 43" -> "Maleta: 44"
-"Maleta: 44" -> "Maleta: 43""Maleta: 44" -> "Maleta: 45"
-"Maleta: 45" -> "Maleta: 44""Maleta: 45" -> "Maleta: 46"
-"Maleta: 46" -> "Maleta: 45""Maleta: 46" -> "Maleta: 47"
-"Maleta: 47" -> "Maleta: 46""Maleta: 47" -> "Maleta: 48"
-"Maleta: 48" -> "Maleta: 47""Maleta: 48" -> "Maleta: 49"
-"Maleta: 49" -> "Maleta: 48""Maleta: 49" -> "Maleta: 50"
-"Maleta: 50" -> "Maleta: 49""Maleta: 50" -> "Maleta: 51"
-"Maleta: 51" -> "Maleta: 50""Maleta: 51" -> "Maleta: 52"
-"Maleta: 52" -> "Maleta: 51""Maleta: 52" -> "Maleta: 53"
-"Maleta: 53" -> "Maleta: 52""Maleta: 53" -> "Maleta: 54"
-"Maleta: 54" -> "Maleta: 53""Maleta: 54" -> "Maleta: 55"
-"Maleta: 55" -> "Maleta: 54""Maleta: 55" -> "Maleta: 56"
-"Maleta: 56" -> "Maleta: 55""Maleta: 56" -> "Maleta: 57"
-"Maleta: 57" -> "Maleta: 56""Maleta: 57" -> "Maleta: 58"
-"Maleta: 58" -> "Maleta: 57""Maleta: 58" -> "Maleta: 59"
-"Maleta: 59" -> "Maleta: 58""Maleta: 59" -> "Maleta: 60"
-"Maleta: 60" -> "Maleta: 59""Maleta: 60" -> "Maleta: 61"
-"Maleta: 61" -> "Maleta: 60""Maleta: 61" -> "Maleta: 62"
-"Maleta: 62" -> "Maleta: 61""Maleta: 62" -> "Maleta: 63"
-"Maleta: 63" -> "Maleta: 62""Maleta: 63" -> "Maleta: 64"
-"Maleta: 64" -> "Maleta: 63""Maleta: 64" -> "Maleta: 65"
-"Maleta: 65" -> "Maleta: 64""Maleta: 65" -> "Maleta: 66"
-"Maleta: 66" -> "Maleta: 65""Maleta: 66" -> "Maleta: 67"
-"Maleta: 67" -> "Maleta: 66""Maleta: 67" -> "Maleta: 68"
-"Maleta: 68" -> "Maleta: 67""Maleta: 68" -> "Maleta: 69"
-"Maleta: 69" -> "Maleta: 68""Maleta: 69" -> "Maleta: 70"
-"Maleta: 70" -> "Maleta: 69""Maleta: 70" -> "Maleta: 71"
-"Maleta: 71" -> "Maleta: 70""Maleta: 71" -> "Maleta: 72"
-"Maleta: 72" -> "Maleta: 71""Maleta: 72" -> "Maleta: 73"
-"Maleta: 73" -> "Maleta: 72""Maleta: 73" -> "Maleta: 74"
-"Maleta: 74" -> "Maleta: 73""Maleta: 74" -> "Maleta: 75"
-"Maleta: 75" -> "Maleta: 74""Maleta: 75" -> "Maleta: 76"
-"Maleta: 76" -> "Maleta: 75""Maleta: 76" -> "Maleta: 77"
-"Maleta: 77" -> "Maleta: 76""Maleta: 77" -> "Maleta: 78"
-"Maleta: 78" -> "Maleta: 77""Maleta: 78" -> "Maleta: 79"
-"Maleta: 79" -> "Maleta: 78""Maleta: 79" -> "Maleta: 80"
-"Maleta: 80" -> "Maleta: 79""Maleta: 80" -> "Maleta: 81"
-"Maleta: 81" -> "Maleta: 80""Maleta: 81" -> "Maleta: 82"
-"Maleta: 82" -> "Maleta: 81""Maleta: 82" -> "Maleta: 83"
-"Maleta: 83" -> "Maleta: 82""Maleta: 83" -> "Maleta: 84"
-"Maleta: 84" -> "Maleta: 83""Maleta: 84"
-"Maleta: 1" -> "Maleta: 84"
-"Maleta: 84" -> "Maleta: 1"
+
+}
+
+subgraph cluster_ListaMantenimiento{
+node [shape=box, style=filled];
+label = "Area de Mantenimiento";
+color = blue;
+{rank=min;"Estacion: 0
+Estado: Libre
+Avion actual: Ninguno
+Turnos Restantes: 0";};
+"Estacion: 0
+Estado: Libre
+Avion actual: Ninguno
+Turnos Restantes: 0"subgraph cluster_ColaAviones{
+node [shape=box, style=filled];
+label = "Cola de Aviones Mantenimiento";
+color = blue;
+
+}
+
 
 }
 

@@ -6,6 +6,7 @@
 #include <colapersonas.h>
 #include <listaescritorios.h>
 #include <listamaletas.h>
+#include <listamantenimiento.h>
 
 
 namespace Ui {
@@ -28,6 +29,10 @@ private slots:
     void ActualizarGrafica();
 
     void SiguienteTurnoAvionesAterrizan();
+
+    void SiguienteTurnoMantenimiento();
+
+    void SiguienteTurnoRegistro();
 
 private:
     Ui::MainWindow *ui;

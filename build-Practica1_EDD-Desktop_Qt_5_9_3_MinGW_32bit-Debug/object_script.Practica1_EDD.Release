@@ -10,5 +10,9 @@ INPUT(
 ./release\listaescritorios.o
 ./release\nodomaleta.o
 ./release\listamaletas.o
+./release\nodomantenimiento.o
+./release\listamantenimiento.o
+./release\nododocumento.o
+./release\piladocumentos.o
 ./release\moc_mainwindow.o
 );

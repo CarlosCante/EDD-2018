@@ -17,8 +17,12 @@ struct ListaMaletas
       ListaMaletas();
       void IngresarMaleta();
       void CargarMaletas(int NoMaletas);
+      void SacarMaletas(int Cantidad);
+      void PopMaleta();
 
       string GenerarSubGrafo();
+
+      int CantidadDeMaletas();
 };
 
 #endif // LISTAMALETAS_H

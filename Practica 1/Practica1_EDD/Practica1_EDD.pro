@@ -34,7 +34,11 @@ SOURCES += \
     nodoescritorio.cpp \
     listaescritorios.cpp \
     nodomaleta.cpp \
-    listamaletas.cpp
+    listamaletas.cpp \
+    nodomantenimiento.cpp \
+    listamantenimiento.cpp \
+    nododocumento.cpp \
+    piladocumentos.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -46,7 +50,11 @@ HEADERS += \
     listaescritorios.h \
     nodoescritorio.h \
     nodomaleta.h \
-    listamaletas.h
+    listamaletas.h \
+    listamantenimiento.h \
+    nodomantenimiento.h \
+    nododocumento.h \
+    piladocumentos.h
 
 FORMS += \
         mainwindow.ui

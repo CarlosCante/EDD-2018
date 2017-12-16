@@ -74,20 +74,24 @@ NodoPersona* ColaPersonas::SacarPersona()
         }
         else
         {
-            while (tmp->siguiente != this->Ultimo) {
+            while(tmp->siguiente != this->Ultimo)
                 tmp = tmp->siguiente;
-            }
 
             NodoPersona* tmp2 = this->Ultimo;
-
             this->Ultimo = tmp;
             this->Ultimo->siguiente = nullptr;
-            free(tmp);
-
             return tmp2;
         }
     }
     return nullptr;
+}
+
+bool ColaPersonas::EstaVacia()
+{
+    if(this->Primero == nullptr)
+        return true;
+    return false;
+
 }
 
 string ColaPersonas::GenerarSubGrafo(int NumeroCola)
@@ -103,21 +107,25 @@ string ColaPersonas::GenerarSubGrafo(int NumeroCola)
         NodoPersona* aux = this->Primero;
 
         do {
-            subgrafo += "\"Persona " + to_string(aux->IDPersona) + "\n";
-            subgrafo += "No. Maletas: " + to_string(aux->NoMaletas) + "\n";
-            subgrafo += "No. Documentos: " + to_string(aux->NoDocumentos) + "\n";
-            subgrafo += "Turdos para Registro: " + to_string(aux->NoTurnosR) + "\"";
-
             if(aux->siguiente != nullptr)
             {
-                subgrafo += " -> ";
+
 
                 subgrafo += "\"Persona " + to_string(aux->siguiente->IDPersona) + "\n";
                 subgrafo += "No. Maletas: " + to_string(aux->siguiente->NoMaletas) + "\n";
                 subgrafo += "No. Documentos: " + to_string(aux->siguiente->NoDocumentos) + "\n";
                 subgrafo += "Turdos para Registro: " + to_string(aux->siguiente->NoTurnosR) + "\"";
 
+                subgrafo += " -> ";
+
             }
+
+            subgrafo += "\"Persona " + to_string(aux->IDPersona) + "\n";
+            subgrafo += "No. Maletas: " + to_string(aux->NoMaletas) + "\n";
+            subgrafo += "No. Documentos: " + to_string(aux->NoDocumentos) + "\n";
+            subgrafo += "Turdos para Registro: " + to_string(aux->NoTurnosR) + "\"";
+
+
 
             aux = aux->siguiente;
         } while (aux != nullptr);

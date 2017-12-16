@@ -1,6 +1,8 @@
 #ifndef LISTAESCRITORIOS_H
 #define LISTAESCRITORIOS_H
 #include <nodoescritorio.h>
+#include <listamaletas.h>
+#include <QString>
 
 
 using namespace std;
@@ -11,14 +13,20 @@ struct ListaEscritorios
 {
     NodoEscritorio* Primero;
     NodoEscritorio* Ultimo;
+    int IdDocumentos;
 
     ListaEscritorios();
 
     void AgregarEscritorio(int id);
     void CargarEscritorios(int NoEscritorios);
     string GenerarSubgrafo();
-    void CargarPersonas(ColaPersonas* colaper);
-    bool HayLugares();
+
+    void CargarPersonas(ColaPersonas* colageneral);
+    bool HayEspacio();
+
+    void PasarTurno(ListaMaletas* l);
+
+    QString EstadoActual();
 };
 
 #endif // LISTAESCRITORIOS_H

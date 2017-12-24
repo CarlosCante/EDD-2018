@@ -4,164 +4,718 @@ subgraph cluster_ColaAvionesLlegan {
 node [shape=box, style=filled];
 label = "Llegada de Aviones";
 color = blue;
-"Avion 1
-Turdos Desabordaje: 2
-Numero Pasajeros: 18
-Turdos Mantenimiento: 4"
+"Aviones Vacio"
+
 }
 
 subgraph cluster_ColaPersonas0{
 node [shape=box, style=filled];
 label = "Cola de Personas";
 color = blue;
-
+"Persona 141
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 142
+No. Maletas: 3
+No. Documentos: 4
+Turdos para Registro: 3""Persona 140
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 1" -> "Persona 141
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 2""Persona 139
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 140
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 1""Persona 138
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 139
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 2""Persona 137
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 138
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 1""Persona 136
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 3" -> "Persona 137
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3""Persona 135
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 136
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 3""Persona 134
+No. Maletas: 1
+No. Documentos: 6
+Turdos para Registro: 2" -> "Persona 135
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 2""Persona 133
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 1" -> "Persona 134
+No. Maletas: 1
+No. Documentos: 6
+Turdos para Registro: 2""Persona 132
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 133
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 1""Persona 131
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 132
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3""Persona 130
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 131
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2""Persona 129
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 130
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 3""Persona 128
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 129
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 1""Persona 127
+No. Maletas: 3
+No. Documentos: 1
+Turdos para Registro: 3" -> "Persona 128
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 2""Persona 126
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 1" -> "Persona 127
+No. Maletas: 3
+No. Documentos: 1
+Turdos para Registro: 3""Persona 125
+No. Maletas: 3
+No. Documentos: 1
+Turdos para Registro: 1" -> "Persona 126
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 1""Persona 124
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 1" -> "Persona 125
+No. Maletas: 3
+No. Documentos: 1
+Turdos para Registro: 1""Persona 123
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 1" -> "Persona 124
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 1""Persona 122
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 123
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 1""Persona 121
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 122
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3""Persona 120
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 3" -> "Persona 121
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 3""Persona 119
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 120
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 3""Persona 118
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 119
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 2""Persona 117
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1" -> "Persona 118
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 2""Persona 116
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 1" -> "Persona 117
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1""Persona 115
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 3" -> "Persona 116
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 1""Persona 114
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 1" -> "Persona 115
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 3""Persona 113
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 1" -> "Persona 114
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 1""Persona 112
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 1" -> "Persona 113
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 1""Persona 111
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 112
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 1""Persona 110
+No. Maletas: 2
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 111
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 2""Persona 109
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 110
+No. Maletas: 2
+No. Documentos: 10
+Turdos para Registro: 2""Persona 108
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 2" -> "Persona 109
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 1""Persona 107
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 108
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 2""Persona 106
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 3" -> "Persona 107
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 1""Persona 105
+No. Maletas: 1
+No. Documentos: 8
+Turdos para Registro: 2" -> "Persona 106
+No. Maletas: 1
+No. Documentos: 1
+Turdos para Registro: 3""Persona 104
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 3" -> "Persona 105
+No. Maletas: 1
+No. Documentos: 8
+Turdos para Registro: 2""Persona 103
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1" -> "Persona 104
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 3""Persona 102
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 1" -> "Persona 103
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 1""Persona 101
+No. Maletas: 4
+No. Documentos: 8
+Turdos para Registro: 3" -> "Persona 102
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 1""Persona 100
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 101
+No. Maletas: 4
+No. Documentos: 8
+Turdos para Registro: 3""Persona 99
+No. Maletas: 3
+No. Documentos: 1
+Turdos para Registro: 3" -> "Persona 100
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 2""Persona 98
+No. Maletas: 4
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 99
+No. Maletas: 3
+No. Documentos: 1
+Turdos para Registro: 3""Persona 97
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 2" -> "Persona 98
+No. Maletas: 4
+No. Documentos: 7
+Turdos para Registro: 1""Persona 96
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 3" -> "Persona 97
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 2""Persona 95
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 96
+No. Maletas: 2
+No. Documentos: 8
+Turdos para Registro: 3""Persona 94
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 1" -> "Persona 95
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 2""Persona 93
+No. Maletas: 1
+No. Documentos: 6
+Turdos para Registro: 3" -> "Persona 94
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 1""Persona 92
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 93
+No. Maletas: 1
+No. Documentos: 6
+Turdos para Registro: 3""Persona 91
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 92
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 2""Persona 90
+No. Maletas: 4
+No. Documentos: 2
+Turdos para Registro: 1" -> "Persona 91
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 3""Persona 89
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 90
+No. Maletas: 4
+No. Documentos: 2
+Turdos para Registro: 1""Persona 88
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 89
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 3""Persona 87
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 88
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 2""Persona 86
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 1" -> "Persona 87
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 3""Persona 85
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 86
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 1""Persona 84
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 2" -> "Persona 85
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 1""Persona 83
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 84
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 2""Persona 82
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 2" -> "Persona 83
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2""Persona 81
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 82
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 2""Persona 80
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 81
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 2""Persona 79
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 2" -> "Persona 80
+No. Maletas: 1
+No. Documentos: 7
+Turdos para Registro: 1""Persona 78
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 79
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 2""Persona 77
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 2" -> "Persona 78
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 2""Persona 76
+No. Maletas: 2
+No. Documentos: 2
+Turdos para Registro: 2" -> "Persona 77
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 2""Persona 75
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 1" -> "Persona 76
+No. Maletas: 2
+No. Documentos: 2
+Turdos para Registro: 2""Persona 74
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 2" -> "Persona 75
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 1""Persona 73
+No. Maletas: 1
+No. Documentos: 2
+Turdos para Registro: 2" -> "Persona 74
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 2""Persona 72
+No. Maletas: 2
+No. Documentos: 9
+Turdos para Registro: 2" -> "Persona 73
+No. Maletas: 1
+No. Documentos: 2
+Turdos para Registro: 2""Persona 71
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 3" -> "Persona 72
+No. Maletas: 2
+No. Documentos: 9
+Turdos para Registro: 2""Persona 70
+No. Maletas: 3
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 71
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 3""Persona 69
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 3" -> "Persona 70
+No. Maletas: 3
+No. Documentos: 4
+Turdos para Registro: 2""Persona 68
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 69
+No. Maletas: 3
+No. Documentos: 8
+Turdos para Registro: 3""Persona 67
+No. Maletas: 3
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 68
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 1""Persona 66
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 67
+No. Maletas: 3
+No. Documentos: 4
+Turdos para Registro: 2""Persona 65
+No. Maletas: 2
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 66
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 2""Persona 64
+No. Maletas: 2
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 65
+No. Maletas: 2
+No. Documentos: 10
+Turdos para Registro: 1""Persona 63
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1" -> "Persona 64
+No. Maletas: 2
+No. Documentos: 10
+Turdos para Registro: 1""Persona 62
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 2" -> "Persona 63
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1""Persona 61
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 3" -> "Persona 62
+No. Maletas: 1
+No. Documentos: 9
+Turdos para Registro: 2""Persona 60
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 1" -> "Persona 61
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 3""Persona 59
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 2" -> "Persona 60
+No. Maletas: 3
+No. Documentos: 9
+Turdos para Registro: 1""Persona 58
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 59
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 2""Persona 57
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 2" -> "Persona 58
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2""Persona 56
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 57
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 2""Persona 55
+No. Maletas: 4
+No. Documentos: 3
+Turdos para Registro: 3" -> "Persona 56
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 1""Persona 54
+No. Maletas: 1
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 55
+No. Maletas: 4
+No. Documentos: 3
+Turdos para Registro: 3""Persona 53
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 3" -> "Persona 54
+No. Maletas: 1
+No. Documentos: 6
+Turdos para Registro: 1""Persona 52
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 1" -> "Persona 53
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 3""Persona 51
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 2" -> "Persona 52
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 1""Persona 50
+No. Maletas: 3
+No. Documentos: 4
+Turdos para Registro: 3" -> "Persona 51
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 2""Persona 49
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 3" -> "Persona 50
+No. Maletas: 3
+No. Documentos: 4
+Turdos para Registro: 3""Persona 48
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 2" -> "Persona 49
+No. Maletas: 3
+No. Documentos: 3
+Turdos para Registro: 3""Persona 47
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 2" -> "Persona 48
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 2""Persona 46
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 47
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 2""Persona 45
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 2" -> "Persona 46
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3""Persona 44
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 1" -> "Persona 45
+No. Maletas: 1
+No. Documentos: 5
+Turdos para Registro: 2""Persona 43
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 44
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 1""Persona 42
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 2" -> "Persona 43
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 3""Persona 41
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 1" -> "Persona 42
+No. Maletas: 3
+No. Documentos: 6
+Turdos para Registro: 2""Persona 40
+No. Maletas: 4
+No. Documentos: 2
+Turdos para Registro: 2" -> "Persona 41
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 1""Persona 39
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 2" -> "Persona 40
+No. Maletas: 4
+No. Documentos: 2
+Turdos para Registro: 2""Persona 38
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 1" -> "Persona 39
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 2""Persona 37
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 38
+No. Maletas: 1
+No. Documentos: 3
+Turdos para Registro: 1""Persona 36
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 1" -> "Persona 37
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 1""Persona 35
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 36
+No. Maletas: 1
+No. Documentos: 4
+Turdos para Registro: 1""Persona 34
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 35
+No. Maletas: 2
+No. Documentos: 7
+Turdos para Registro: 2""Persona 33
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 2" -> "Persona 34
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 3""Persona 32
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 33
+No. Maletas: 4
+No. Documentos: 9
+Turdos para Registro: 2""Persona 31
+No. Maletas: 4
+No. Documentos: 7
+Turdos para Registro: 3" -> "Persona 32
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 1""Persona 30
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 31
+No. Maletas: 4
+No. Documentos: 7
+Turdos para Registro: 3""Persona 29
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 3" -> "Persona 30
+No. Maletas: 4
+No. Documentos: 5
+Turdos para Registro: 3""Persona 29
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 3"
 }
 
 subgraph cluster_Escritorios{
 node [shape=box, style=filled];
 label = "Lista de Escritorios";
 color = blue;
-{rank=min;"Escritorio: [
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: Z
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: Y
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: X
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: W
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: V
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: U
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: T
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: S
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: R
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: Q
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: P
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: O
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: N
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: M
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: L
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: K
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: J
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: I
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: H
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: G
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: F
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: E
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: D
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: C
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
-"Escritorio: B
+{rank=min;"Escritorio: B
 Cliente Atendido: Ninguno 
 Estado: Libre 
 Cantidad Documentos: 0 
 Turnos Restantes: 0 ";
 "Escritorio: A
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 ";
+Cliente Atendido: 7 
+Estado: Ocupado 
+Cantidad Documentos: 2 
+Turnos Restantes: 3 ";
 };
 "Escritorio: A
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
+Cliente Atendido: 7 
+Estado: Ocupado 
+Cantidad Documentos: 2 
+Turnos Restantes: 3 "
  -> "Escritorio: B
 Cliente Atendido: Ninguno 
 Estado: Libre 
@@ -174,34 +728,75 @@ Estado: Libre
 Cantidad Documentos: 0 
 Turnos Restantes: 0 "
  -> "Escritorio: A
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
+Cliente Atendido: 7 
+Estado: Ocupado 
+Cantidad Documentos: 2 
+Turnos Restantes: 3 "
 subgraph cluster_ColaPersonas0{
 node [shape=box, style=filled];
 label = "Cola de Personas";
 color = blue;
-
+"Persona 26
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 28
+No. Maletas: 3
+No. Documentos: 10
+Turdos para Registro: 3""Persona 24
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 3" -> "Persona 26
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1""Persona 20
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2" -> "Persona 24
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 3""Persona 18
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 20
+No. Maletas: 2
+No. Documentos: 3
+Turdos para Registro: 2""Persona 17
+No. Maletas: 4
+No. Documentos: 3
+Turdos para Registro: 1" -> "Persona 18
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1""Persona 15
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 3" -> "Persona 17
+No. Maletas: 4
+No. Documentos: 3
+Turdos para Registro: 1""Persona 13
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 2" -> "Persona 15
+No. Maletas: 3
+No. Documentos: 5
+Turdos para Registro: 3""Persona 11
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 2" -> "Persona 13
+No. Maletas: 2
+No. Documentos: 4
+Turdos para Registro: 2""Persona 9
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2" -> "Persona 11
+No. Maletas: 2
+No. Documentos: 1
+Turdos para Registro: 2""Persona 9
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2"
 }
 
 "Escritorio: B
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: C
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: C
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: B
 Cliente Atendido: Ninguno 
 Estado: Libre 
 Cantidad Documentos: 0 
@@ -210,881 +805,97 @@ subgraph cluster_ColaPersonas1{
 node [shape=box, style=filled];
 label = "Cola de Personas";
 color = blue;
-
-}
-
-"Escritorio: C
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: D
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: D
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: C
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas2{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: D
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: E
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: E
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: D
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas3{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: E
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: F
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: F
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: E
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas4{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: F
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: G
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: G
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: F
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas5{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: G
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: H
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: H
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: G
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas6{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: H
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: I
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: I
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: H
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas7{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: I
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: J
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: J
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: I
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas8{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: J
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: K
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: K
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: J
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas9{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: K
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: L
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: L
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: K
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas10{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: L
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: M
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: M
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: L
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas11{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: M
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: N
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: N
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: M
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas12{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: N
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: O
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: O
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: N
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas13{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: O
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: P
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: P
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: O
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas14{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: P
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: Q
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: Q
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: P
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas15{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: Q
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: R
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: R
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: Q
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas16{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: R
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: S
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: S
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: R
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas17{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: S
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: T
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: T
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: S
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas18{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: T
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: U
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: U
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: T
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas19{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: U
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: V
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: V
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: U
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas20{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: V
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: W
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: W
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: V
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas21{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: W
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: X
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: X
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: W
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas22{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: X
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: Y
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: Y
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: X
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas23{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: Y
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: Z
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: Z
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: Y
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas24{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: Z
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: [
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-
-"Escritorio: [
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Escritorio: Z
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas25{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
-}
-
-"Escritorio: [
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
-subgraph cluster_ColaPersonas26{
-node [shape=box, style=filled];
-label = "Cola de Personas";
-color = blue;
-
+"Persona 25
+No. Maletas: 4
+No. Documentos: 6
+Turdos para Registro: 3" -> "Persona 27
+No. Maletas: 3
+No. Documentos: 2
+Turdos para Registro: 1""Persona 23
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 3" -> "Persona 25
+No. Maletas: 4
+No. Documentos: 6
+Turdos para Registro: 3""Persona 22
+No. Maletas: 4
+No. Documentos: 1
+Turdos para Registro: 2" -> "Persona 23
+No. Maletas: 4
+No. Documentos: 4
+Turdos para Registro: 3""Persona 21
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1" -> "Persona 22
+No. Maletas: 4
+No. Documentos: 1
+Turdos para Registro: 2""Persona 19
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 1" -> "Persona 21
+No. Maletas: 2
+No. Documentos: 6
+Turdos para Registro: 1""Persona 16
+No. Maletas: 1
+No. Documentos: 2
+Turdos para Registro: 3" -> "Persona 19
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 1""Persona 14
+No. Maletas: 4
+No. Documentos: 1
+Turdos para Registro: 1" -> "Persona 16
+No. Maletas: 1
+No. Documentos: 2
+Turdos para Registro: 3""Persona 12
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 1" -> "Persona 14
+No. Maletas: 4
+No. Documentos: 1
+Turdos para Registro: 1""Persona 10
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 3" -> "Persona 12
+No. Maletas: 1
+No. Documentos: 10
+Turdos para Registro: 1""Persona 10
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 3"
 }
 
 "Escritorio: A
+Cliente Atendido: 7 
+Estado: Ocupado 
+Cantidad Documentos: 2 
+Turnos Restantes: 3 "
+ -> "Persona 9
+No. Maletas: 3
+No. Documentos: 7
+Turdos para Registro: 2"
+"Escritorio: B
 Cliente Atendido: Ninguno 
 Estado: Libre 
 Cantidad Documentos: 0 
 Turnos Restantes: 0 "
+ -> "Persona 10
+No. Maletas: 4
+No. Documentos: 10
+Turdos para Registro: 3"
+"Escritorio: A
+Cliente Atendido: 7 
+Estado: Ocupado 
+Cantidad Documentos: 2 
+Turnos Restantes: 3 "
  -> "Pila Escritorio: 0
-Sin Documentos"
+Documentos en la pila: 2"
 "Escritorio: B
 Cliente Atendido: Ninguno 
 Estado: Libre 
 Cantidad Documentos: 0 
 Turnos Restantes: 0 "
  -> "Pila Escritorio: 1
-Sin Documentos"
-"Escritorio: C
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 2
-Sin Documentos"
-"Escritorio: D
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 3
-Sin Documentos"
-"Escritorio: E
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 4
-Sin Documentos"
-"Escritorio: F
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 5
-Sin Documentos"
-"Escritorio: G
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 6
-Sin Documentos"
-"Escritorio: H
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 7
-Sin Documentos"
-"Escritorio: I
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 8
-Sin Documentos"
-"Escritorio: J
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 9
-Sin Documentos"
-"Escritorio: K
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 10
-Sin Documentos"
-"Escritorio: L
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 11
-Sin Documentos"
-"Escritorio: M
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 12
-Sin Documentos"
-"Escritorio: N
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 13
-Sin Documentos"
-"Escritorio: O
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 14
-Sin Documentos"
-"Escritorio: P
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 15
-Sin Documentos"
-"Escritorio: Q
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 16
-Sin Documentos"
-"Escritorio: R
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 17
-Sin Documentos"
-"Escritorio: S
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 18
-Sin Documentos"
-"Escritorio: T
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 19
-Sin Documentos"
-"Escritorio: U
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 20
-Sin Documentos"
-"Escritorio: V
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 21
-Sin Documentos"
-"Escritorio: W
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 22
-Sin Documentos"
-"Escritorio: X
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 23
-Sin Documentos"
-"Escritorio: Y
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 24
-Sin Documentos"
-"Escritorio: Z
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 25
-Sin Documentos"
-"Escritorio: [
-Cliente Atendido: Ninguno 
-Estado: Libre 
-Cantidad Documentos: 0 
-Turnos Restantes: 0 "
- -> "Pila Escritorio: 26
 Sin Documentos"
 
 }
@@ -1093,7 +904,334 @@ subgraph cluster_Maletas{
 node [shape=box, style=filled];
 label = "Lista de Maletas";
 color = blue;
-
+"Maleta: 14" -> "Maleta: 15"
+"Maleta: 15" -> "Maleta: 14""Maleta: 15" -> "Maleta: 16"
+"Maleta: 16" -> "Maleta: 15""Maleta: 16" -> "Maleta: 17"
+"Maleta: 17" -> "Maleta: 16""Maleta: 17" -> "Maleta: 18"
+"Maleta: 18" -> "Maleta: 17""Maleta: 18" -> "Maleta: 19"
+"Maleta: 19" -> "Maleta: 18""Maleta: 19" -> "Maleta: 20"
+"Maleta: 20" -> "Maleta: 19""Maleta: 20" -> "Maleta: 21"
+"Maleta: 21" -> "Maleta: 20""Maleta: 21" -> "Maleta: 22"
+"Maleta: 22" -> "Maleta: 21""Maleta: 22" -> "Maleta: 23"
+"Maleta: 23" -> "Maleta: 22""Maleta: 23" -> "Maleta: 24"
+"Maleta: 24" -> "Maleta: 23""Maleta: 24" -> "Maleta: 25"
+"Maleta: 25" -> "Maleta: 24""Maleta: 25" -> "Maleta: 26"
+"Maleta: 26" -> "Maleta: 25""Maleta: 26" -> "Maleta: 27"
+"Maleta: 27" -> "Maleta: 26""Maleta: 27" -> "Maleta: 28"
+"Maleta: 28" -> "Maleta: 27""Maleta: 28" -> "Maleta: 29"
+"Maleta: 29" -> "Maleta: 28""Maleta: 29" -> "Maleta: 30"
+"Maleta: 30" -> "Maleta: 29""Maleta: 30" -> "Maleta: 31"
+"Maleta: 31" -> "Maleta: 30""Maleta: 31" -> "Maleta: 32"
+"Maleta: 32" -> "Maleta: 31""Maleta: 32" -> "Maleta: 33"
+"Maleta: 33" -> "Maleta: 32""Maleta: 33" -> "Maleta: 34"
+"Maleta: 34" -> "Maleta: 33""Maleta: 34" -> "Maleta: 35"
+"Maleta: 35" -> "Maleta: 34""Maleta: 35" -> "Maleta: 36"
+"Maleta: 36" -> "Maleta: 35""Maleta: 36" -> "Maleta: 37"
+"Maleta: 37" -> "Maleta: 36""Maleta: 37" -> "Maleta: 38"
+"Maleta: 38" -> "Maleta: 37""Maleta: 38" -> "Maleta: 39"
+"Maleta: 39" -> "Maleta: 38""Maleta: 39" -> "Maleta: 40"
+"Maleta: 40" -> "Maleta: 39""Maleta: 40" -> "Maleta: 41"
+"Maleta: 41" -> "Maleta: 40""Maleta: 41" -> "Maleta: 42"
+"Maleta: 42" -> "Maleta: 41""Maleta: 42" -> "Maleta: 43"
+"Maleta: 43" -> "Maleta: 42""Maleta: 43" -> "Maleta: 44"
+"Maleta: 44" -> "Maleta: 43""Maleta: 44" -> "Maleta: 45"
+"Maleta: 45" -> "Maleta: 44""Maleta: 45" -> "Maleta: 46"
+"Maleta: 46" -> "Maleta: 45""Maleta: 46" -> "Maleta: 47"
+"Maleta: 47" -> "Maleta: 46""Maleta: 47" -> "Maleta: 48"
+"Maleta: 48" -> "Maleta: 47""Maleta: 48" -> "Maleta: 49"
+"Maleta: 49" -> "Maleta: 48""Maleta: 49" -> "Maleta: 50"
+"Maleta: 50" -> "Maleta: 49""Maleta: 50" -> "Maleta: 51"
+"Maleta: 51" -> "Maleta: 50""Maleta: 51" -> "Maleta: 52"
+"Maleta: 52" -> "Maleta: 51""Maleta: 52" -> "Maleta: 53"
+"Maleta: 53" -> "Maleta: 52""Maleta: 53" -> "Maleta: 54"
+"Maleta: 54" -> "Maleta: 53""Maleta: 54" -> "Maleta: 55"
+"Maleta: 55" -> "Maleta: 54""Maleta: 55" -> "Maleta: 56"
+"Maleta: 56" -> "Maleta: 55""Maleta: 56" -> "Maleta: 57"
+"Maleta: 57" -> "Maleta: 56""Maleta: 57" -> "Maleta: 58"
+"Maleta: 58" -> "Maleta: 57""Maleta: 58" -> "Maleta: 59"
+"Maleta: 59" -> "Maleta: 58""Maleta: 59" -> "Maleta: 60"
+"Maleta: 60" -> "Maleta: 59""Maleta: 60" -> "Maleta: 61"
+"Maleta: 61" -> "Maleta: 60""Maleta: 61" -> "Maleta: 62"
+"Maleta: 62" -> "Maleta: 61""Maleta: 62" -> "Maleta: 63"
+"Maleta: 63" -> "Maleta: 62""Maleta: 63" -> "Maleta: 64"
+"Maleta: 64" -> "Maleta: 63""Maleta: 64" -> "Maleta: 65"
+"Maleta: 65" -> "Maleta: 64""Maleta: 65" -> "Maleta: 66"
+"Maleta: 66" -> "Maleta: 65""Maleta: 66" -> "Maleta: 67"
+"Maleta: 67" -> "Maleta: 66""Maleta: 67" -> "Maleta: 68"
+"Maleta: 68" -> "Maleta: 67""Maleta: 68" -> "Maleta: 69"
+"Maleta: 69" -> "Maleta: 68""Maleta: 69" -> "Maleta: 70"
+"Maleta: 70" -> "Maleta: 69""Maleta: 70" -> "Maleta: 71"
+"Maleta: 71" -> "Maleta: 70""Maleta: 71" -> "Maleta: 72"
+"Maleta: 72" -> "Maleta: 71""Maleta: 72" -> "Maleta: 73"
+"Maleta: 73" -> "Maleta: 72""Maleta: 73" -> "Maleta: 74"
+"Maleta: 74" -> "Maleta: 73""Maleta: 74" -> "Maleta: 75"
+"Maleta: 75" -> "Maleta: 74""Maleta: 75" -> "Maleta: 76"
+"Maleta: 76" -> "Maleta: 75""Maleta: 76" -> "Maleta: 77"
+"Maleta: 77" -> "Maleta: 76""Maleta: 77" -> "Maleta: 78"
+"Maleta: 78" -> "Maleta: 77""Maleta: 78" -> "Maleta: 79"
+"Maleta: 79" -> "Maleta: 78""Maleta: 79" -> "Maleta: 80"
+"Maleta: 80" -> "Maleta: 79""Maleta: 80" -> "Maleta: 81"
+"Maleta: 81" -> "Maleta: 80""Maleta: 81" -> "Maleta: 82"
+"Maleta: 82" -> "Maleta: 81""Maleta: 82" -> "Maleta: 83"
+"Maleta: 83" -> "Maleta: 82""Maleta: 83" -> "Maleta: 84"
+"Maleta: 84" -> "Maleta: 83""Maleta: 84" -> "Maleta: 85"
+"Maleta: 85" -> "Maleta: 84""Maleta: 85" -> "Maleta: 86"
+"Maleta: 86" -> "Maleta: 85""Maleta: 86" -> "Maleta: 87"
+"Maleta: 87" -> "Maleta: 86""Maleta: 87" -> "Maleta: 88"
+"Maleta: 88" -> "Maleta: 87""Maleta: 88" -> "Maleta: 89"
+"Maleta: 89" -> "Maleta: 88""Maleta: 89" -> "Maleta: 90"
+"Maleta: 90" -> "Maleta: 89""Maleta: 90" -> "Maleta: 91"
+"Maleta: 91" -> "Maleta: 90""Maleta: 91" -> "Maleta: 92"
+"Maleta: 92" -> "Maleta: 91""Maleta: 92" -> "Maleta: 93"
+"Maleta: 93" -> "Maleta: 92""Maleta: 93" -> "Maleta: 94"
+"Maleta: 94" -> "Maleta: 93""Maleta: 94" -> "Maleta: 95"
+"Maleta: 95" -> "Maleta: 94""Maleta: 95" -> "Maleta: 96"
+"Maleta: 96" -> "Maleta: 95""Maleta: 96" -> "Maleta: 97"
+"Maleta: 97" -> "Maleta: 96""Maleta: 97" -> "Maleta: 98"
+"Maleta: 98" -> "Maleta: 97""Maleta: 98" -> "Maleta: 99"
+"Maleta: 99" -> "Maleta: 98""Maleta: 99" -> "Maleta: 100"
+"Maleta: 100" -> "Maleta: 99""Maleta: 100" -> "Maleta: 101"
+"Maleta: 101" -> "Maleta: 100""Maleta: 101" -> "Maleta: 102"
+"Maleta: 102" -> "Maleta: 101""Maleta: 102" -> "Maleta: 103"
+"Maleta: 103" -> "Maleta: 102""Maleta: 103" -> "Maleta: 104"
+"Maleta: 104" -> "Maleta: 103""Maleta: 104" -> "Maleta: 105"
+"Maleta: 105" -> "Maleta: 104""Maleta: 105" -> "Maleta: 106"
+"Maleta: 106" -> "Maleta: 105""Maleta: 106" -> "Maleta: 107"
+"Maleta: 107" -> "Maleta: 106""Maleta: 107" -> "Maleta: 108"
+"Maleta: 108" -> "Maleta: 107""Maleta: 108" -> "Maleta: 109"
+"Maleta: 109" -> "Maleta: 108""Maleta: 109" -> "Maleta: 110"
+"Maleta: 110" -> "Maleta: 109""Maleta: 110" -> "Maleta: 111"
+"Maleta: 111" -> "Maleta: 110""Maleta: 111" -> "Maleta: 112"
+"Maleta: 112" -> "Maleta: 111""Maleta: 112" -> "Maleta: 113"
+"Maleta: 113" -> "Maleta: 112""Maleta: 113" -> "Maleta: 114"
+"Maleta: 114" -> "Maleta: 113""Maleta: 114" -> "Maleta: 115"
+"Maleta: 115" -> "Maleta: 114""Maleta: 115" -> "Maleta: 116"
+"Maleta: 116" -> "Maleta: 115""Maleta: 116" -> "Maleta: 117"
+"Maleta: 117" -> "Maleta: 116""Maleta: 117" -> "Maleta: 118"
+"Maleta: 118" -> "Maleta: 117""Maleta: 118" -> "Maleta: 119"
+"Maleta: 119" -> "Maleta: 118""Maleta: 119" -> "Maleta: 120"
+"Maleta: 120" -> "Maleta: 119""Maleta: 120" -> "Maleta: 121"
+"Maleta: 121" -> "Maleta: 120""Maleta: 121" -> "Maleta: 122"
+"Maleta: 122" -> "Maleta: 121""Maleta: 122" -> "Maleta: 123"
+"Maleta: 123" -> "Maleta: 122""Maleta: 123" -> "Maleta: 124"
+"Maleta: 124" -> "Maleta: 123""Maleta: 124" -> "Maleta: 125"
+"Maleta: 125" -> "Maleta: 124""Maleta: 125" -> "Maleta: 126"
+"Maleta: 126" -> "Maleta: 125""Maleta: 126" -> "Maleta: 127"
+"Maleta: 127" -> "Maleta: 126""Maleta: 127" -> "Maleta: 128"
+"Maleta: 128" -> "Maleta: 127""Maleta: 128" -> "Maleta: 129"
+"Maleta: 129" -> "Maleta: 128""Maleta: 129" -> "Maleta: 130"
+"Maleta: 130" -> "Maleta: 129""Maleta: 130" -> "Maleta: 131"
+"Maleta: 131" -> "Maleta: 130""Maleta: 131" -> "Maleta: 132"
+"Maleta: 132" -> "Maleta: 131""Maleta: 132" -> "Maleta: 133"
+"Maleta: 133" -> "Maleta: 132""Maleta: 133" -> "Maleta: 134"
+"Maleta: 134" -> "Maleta: 133""Maleta: 134" -> "Maleta: 135"
+"Maleta: 135" -> "Maleta: 134""Maleta: 135" -> "Maleta: 136"
+"Maleta: 136" -> "Maleta: 135""Maleta: 136" -> "Maleta: 137"
+"Maleta: 137" -> "Maleta: 136""Maleta: 137" -> "Maleta: 138"
+"Maleta: 138" -> "Maleta: 137""Maleta: 138" -> "Maleta: 139"
+"Maleta: 139" -> "Maleta: 138""Maleta: 139" -> "Maleta: 140"
+"Maleta: 140" -> "Maleta: 139""Maleta: 140" -> "Maleta: 141"
+"Maleta: 141" -> "Maleta: 140""Maleta: 141" -> "Maleta: 142"
+"Maleta: 142" -> "Maleta: 141""Maleta: 142" -> "Maleta: 143"
+"Maleta: 143" -> "Maleta: 142""Maleta: 143" -> "Maleta: 144"
+"Maleta: 144" -> "Maleta: 143""Maleta: 144" -> "Maleta: 145"
+"Maleta: 145" -> "Maleta: 144""Maleta: 145" -> "Maleta: 146"
+"Maleta: 146" -> "Maleta: 145""Maleta: 146" -> "Maleta: 147"
+"Maleta: 147" -> "Maleta: 146""Maleta: 147" -> "Maleta: 148"
+"Maleta: 148" -> "Maleta: 147""Maleta: 148" -> "Maleta: 149"
+"Maleta: 149" -> "Maleta: 148""Maleta: 149" -> "Maleta: 150"
+"Maleta: 150" -> "Maleta: 149""Maleta: 150" -> "Maleta: 151"
+"Maleta: 151" -> "Maleta: 150""Maleta: 151" -> "Maleta: 152"
+"Maleta: 152" -> "Maleta: 151""Maleta: 152" -> "Maleta: 153"
+"Maleta: 153" -> "Maleta: 152""Maleta: 153" -> "Maleta: 154"
+"Maleta: 154" -> "Maleta: 153""Maleta: 154" -> "Maleta: 155"
+"Maleta: 155" -> "Maleta: 154""Maleta: 155" -> "Maleta: 156"
+"Maleta: 156" -> "Maleta: 155""Maleta: 156" -> "Maleta: 157"
+"Maleta: 157" -> "Maleta: 156""Maleta: 157" -> "Maleta: 158"
+"Maleta: 158" -> "Maleta: 157""Maleta: 158" -> "Maleta: 159"
+"Maleta: 159" -> "Maleta: 158""Maleta: 159" -> "Maleta: 160"
+"Maleta: 160" -> "Maleta: 159""Maleta: 160" -> "Maleta: 161"
+"Maleta: 161" -> "Maleta: 160""Maleta: 161" -> "Maleta: 162"
+"Maleta: 162" -> "Maleta: 161""Maleta: 162" -> "Maleta: 163"
+"Maleta: 163" -> "Maleta: 162""Maleta: 163" -> "Maleta: 164"
+"Maleta: 164" -> "Maleta: 163""Maleta: 164" -> "Maleta: 165"
+"Maleta: 165" -> "Maleta: 164""Maleta: 165" -> "Maleta: 166"
+"Maleta: 166" -> "Maleta: 165""Maleta: 166" -> "Maleta: 167"
+"Maleta: 167" -> "Maleta: 166""Maleta: 167" -> "Maleta: 168"
+"Maleta: 168" -> "Maleta: 167""Maleta: 168" -> "Maleta: 169"
+"Maleta: 169" -> "Maleta: 168""Maleta: 169" -> "Maleta: 170"
+"Maleta: 170" -> "Maleta: 169""Maleta: 170" -> "Maleta: 171"
+"Maleta: 171" -> "Maleta: 170""Maleta: 171" -> "Maleta: 172"
+"Maleta: 172" -> "Maleta: 171""Maleta: 172" -> "Maleta: 173"
+"Maleta: 173" -> "Maleta: 172""Maleta: 173" -> "Maleta: 174"
+"Maleta: 174" -> "Maleta: 173""Maleta: 174" -> "Maleta: 175"
+"Maleta: 175" -> "Maleta: 174""Maleta: 175" -> "Maleta: 176"
+"Maleta: 176" -> "Maleta: 175""Maleta: 176" -> "Maleta: 177"
+"Maleta: 177" -> "Maleta: 176""Maleta: 177" -> "Maleta: 178"
+"Maleta: 178" -> "Maleta: 177""Maleta: 178" -> "Maleta: 179"
+"Maleta: 179" -> "Maleta: 178""Maleta: 179" -> "Maleta: 180"
+"Maleta: 180" -> "Maleta: 179""Maleta: 180" -> "Maleta: 181"
+"Maleta: 181" -> "Maleta: 180""Maleta: 181" -> "Maleta: 182"
+"Maleta: 182" -> "Maleta: 181""Maleta: 182" -> "Maleta: 183"
+"Maleta: 183" -> "Maleta: 182""Maleta: 183" -> "Maleta: 184"
+"Maleta: 184" -> "Maleta: 183""Maleta: 184" -> "Maleta: 185"
+"Maleta: 185" -> "Maleta: 184""Maleta: 185" -> "Maleta: 186"
+"Maleta: 186" -> "Maleta: 185""Maleta: 186" -> "Maleta: 187"
+"Maleta: 187" -> "Maleta: 186""Maleta: 187" -> "Maleta: 188"
+"Maleta: 188" -> "Maleta: 187""Maleta: 188" -> "Maleta: 189"
+"Maleta: 189" -> "Maleta: 188""Maleta: 189" -> "Maleta: 190"
+"Maleta: 190" -> "Maleta: 189""Maleta: 190" -> "Maleta: 191"
+"Maleta: 191" -> "Maleta: 190""Maleta: 191" -> "Maleta: 192"
+"Maleta: 192" -> "Maleta: 191""Maleta: 192" -> "Maleta: 193"
+"Maleta: 193" -> "Maleta: 192""Maleta: 193" -> "Maleta: 194"
+"Maleta: 194" -> "Maleta: 193""Maleta: 194" -> "Maleta: 195"
+"Maleta: 195" -> "Maleta: 194""Maleta: 195" -> "Maleta: 196"
+"Maleta: 196" -> "Maleta: 195""Maleta: 196" -> "Maleta: 197"
+"Maleta: 197" -> "Maleta: 196""Maleta: 197" -> "Maleta: 198"
+"Maleta: 198" -> "Maleta: 197""Maleta: 198" -> "Maleta: 199"
+"Maleta: 199" -> "Maleta: 198""Maleta: 199" -> "Maleta: 200"
+"Maleta: 200" -> "Maleta: 199""Maleta: 200" -> "Maleta: 201"
+"Maleta: 201" -> "Maleta: 200""Maleta: 201" -> "Maleta: 202"
+"Maleta: 202" -> "Maleta: 201""Maleta: 202" -> "Maleta: 203"
+"Maleta: 203" -> "Maleta: 202""Maleta: 203" -> "Maleta: 204"
+"Maleta: 204" -> "Maleta: 203""Maleta: 204" -> "Maleta: 205"
+"Maleta: 205" -> "Maleta: 204""Maleta: 205" -> "Maleta: 206"
+"Maleta: 206" -> "Maleta: 205""Maleta: 206" -> "Maleta: 207"
+"Maleta: 207" -> "Maleta: 206""Maleta: 207" -> "Maleta: 208"
+"Maleta: 208" -> "Maleta: 207""Maleta: 208" -> "Maleta: 209"
+"Maleta: 209" -> "Maleta: 208""Maleta: 209" -> "Maleta: 210"
+"Maleta: 210" -> "Maleta: 209""Maleta: 210" -> "Maleta: 211"
+"Maleta: 211" -> "Maleta: 210""Maleta: 211" -> "Maleta: 212"
+"Maleta: 212" -> "Maleta: 211""Maleta: 212" -> "Maleta: 213"
+"Maleta: 213" -> "Maleta: 212""Maleta: 213" -> "Maleta: 214"
+"Maleta: 214" -> "Maleta: 213""Maleta: 214" -> "Maleta: 215"
+"Maleta: 215" -> "Maleta: 214""Maleta: 215" -> "Maleta: 216"
+"Maleta: 216" -> "Maleta: 215""Maleta: 216" -> "Maleta: 217"
+"Maleta: 217" -> "Maleta: 216""Maleta: 217" -> "Maleta: 218"
+"Maleta: 218" -> "Maleta: 217""Maleta: 218" -> "Maleta: 219"
+"Maleta: 219" -> "Maleta: 218""Maleta: 219" -> "Maleta: 220"
+"Maleta: 220" -> "Maleta: 219""Maleta: 220" -> "Maleta: 221"
+"Maleta: 221" -> "Maleta: 220""Maleta: 221" -> "Maleta: 222"
+"Maleta: 222" -> "Maleta: 221""Maleta: 222" -> "Maleta: 223"
+"Maleta: 223" -> "Maleta: 222""Maleta: 223" -> "Maleta: 224"
+"Maleta: 224" -> "Maleta: 223""Maleta: 224" -> "Maleta: 225"
+"Maleta: 225" -> "Maleta: 224""Maleta: 225" -> "Maleta: 226"
+"Maleta: 226" -> "Maleta: 225""Maleta: 226" -> "Maleta: 227"
+"Maleta: 227" -> "Maleta: 226""Maleta: 227" -> "Maleta: 228"
+"Maleta: 228" -> "Maleta: 227""Maleta: 228" -> "Maleta: 229"
+"Maleta: 229" -> "Maleta: 228""Maleta: 229" -> "Maleta: 230"
+"Maleta: 230" -> "Maleta: 229""Maleta: 230" -> "Maleta: 231"
+"Maleta: 231" -> "Maleta: 230""Maleta: 231" -> "Maleta: 232"
+"Maleta: 232" -> "Maleta: 231""Maleta: 232" -> "Maleta: 233"
+"Maleta: 233" -> "Maleta: 232""Maleta: 233" -> "Maleta: 234"
+"Maleta: 234" -> "Maleta: 233""Maleta: 234" -> "Maleta: 235"
+"Maleta: 235" -> "Maleta: 234""Maleta: 235" -> "Maleta: 236"
+"Maleta: 236" -> "Maleta: 235""Maleta: 236" -> "Maleta: 237"
+"Maleta: 237" -> "Maleta: 236""Maleta: 237" -> "Maleta: 238"
+"Maleta: 238" -> "Maleta: 237""Maleta: 238" -> "Maleta: 239"
+"Maleta: 239" -> "Maleta: 238""Maleta: 239" -> "Maleta: 240"
+"Maleta: 240" -> "Maleta: 239""Maleta: 240" -> "Maleta: 241"
+"Maleta: 241" -> "Maleta: 240""Maleta: 241" -> "Maleta: 242"
+"Maleta: 242" -> "Maleta: 241""Maleta: 242" -> "Maleta: 243"
+"Maleta: 243" -> "Maleta: 242""Maleta: 243" -> "Maleta: 244"
+"Maleta: 244" -> "Maleta: 243""Maleta: 244" -> "Maleta: 245"
+"Maleta: 245" -> "Maleta: 244""Maleta: 245" -> "Maleta: 246"
+"Maleta: 246" -> "Maleta: 245""Maleta: 246" -> "Maleta: 247"
+"Maleta: 247" -> "Maleta: 246""Maleta: 247" -> "Maleta: 248"
+"Maleta: 248" -> "Maleta: 247""Maleta: 248" -> "Maleta: 249"
+"Maleta: 249" -> "Maleta: 248""Maleta: 249" -> "Maleta: 250"
+"Maleta: 250" -> "Maleta: 249""Maleta: 250" -> "Maleta: 251"
+"Maleta: 251" -> "Maleta: 250""Maleta: 251" -> "Maleta: 252"
+"Maleta: 252" -> "Maleta: 251""Maleta: 252" -> "Maleta: 253"
+"Maleta: 253" -> "Maleta: 252""Maleta: 253" -> "Maleta: 254"
+"Maleta: 254" -> "Maleta: 253""Maleta: 254" -> "Maleta: 255"
+"Maleta: 255" -> "Maleta: 254""Maleta: 255" -> "Maleta: 256"
+"Maleta: 256" -> "Maleta: 255""Maleta: 256" -> "Maleta: 257"
+"Maleta: 257" -> "Maleta: 256""Maleta: 257" -> "Maleta: 258"
+"Maleta: 258" -> "Maleta: 257""Maleta: 258" -> "Maleta: 259"
+"Maleta: 259" -> "Maleta: 258""Maleta: 259" -> "Maleta: 260"
+"Maleta: 260" -> "Maleta: 259""Maleta: 260" -> "Maleta: 261"
+"Maleta: 261" -> "Maleta: 260""Maleta: 261" -> "Maleta: 262"
+"Maleta: 262" -> "Maleta: 261""Maleta: 262" -> "Maleta: 263"
+"Maleta: 263" -> "Maleta: 262""Maleta: 263" -> "Maleta: 264"
+"Maleta: 264" -> "Maleta: 263""Maleta: 264" -> "Maleta: 265"
+"Maleta: 265" -> "Maleta: 264""Maleta: 265" -> "Maleta: 266"
+"Maleta: 266" -> "Maleta: 265""Maleta: 266" -> "Maleta: 267"
+"Maleta: 267" -> "Maleta: 266""Maleta: 267" -> "Maleta: 268"
+"Maleta: 268" -> "Maleta: 267""Maleta: 268" -> "Maleta: 269"
+"Maleta: 269" -> "Maleta: 268""Maleta: 269" -> "Maleta: 270"
+"Maleta: 270" -> "Maleta: 269""Maleta: 270" -> "Maleta: 271"
+"Maleta: 271" -> "Maleta: 270""Maleta: 271" -> "Maleta: 272"
+"Maleta: 272" -> "Maleta: 271""Maleta: 272" -> "Maleta: 273"
+"Maleta: 273" -> "Maleta: 272""Maleta: 273" -> "Maleta: 274"
+"Maleta: 274" -> "Maleta: 273""Maleta: 274" -> "Maleta: 275"
+"Maleta: 275" -> "Maleta: 274""Maleta: 275" -> "Maleta: 276"
+"Maleta: 276" -> "Maleta: 275""Maleta: 276" -> "Maleta: 277"
+"Maleta: 277" -> "Maleta: 276""Maleta: 277" -> "Maleta: 278"
+"Maleta: 278" -> "Maleta: 277""Maleta: 278" -> "Maleta: 279"
+"Maleta: 279" -> "Maleta: 278""Maleta: 279" -> "Maleta: 280"
+"Maleta: 280" -> "Maleta: 279""Maleta: 280" -> "Maleta: 281"
+"Maleta: 281" -> "Maleta: 280""Maleta: 281" -> "Maleta: 282"
+"Maleta: 282" -> "Maleta: 281""Maleta: 282" -> "Maleta: 283"
+"Maleta: 283" -> "Maleta: 282""Maleta: 283" -> "Maleta: 284"
+"Maleta: 284" -> "Maleta: 283""Maleta: 284" -> "Maleta: 285"
+"Maleta: 285" -> "Maleta: 284""Maleta: 285" -> "Maleta: 286"
+"Maleta: 286" -> "Maleta: 285""Maleta: 286" -> "Maleta: 287"
+"Maleta: 287" -> "Maleta: 286""Maleta: 287" -> "Maleta: 288"
+"Maleta: 288" -> "Maleta: 287""Maleta: 288" -> "Maleta: 289"
+"Maleta: 289" -> "Maleta: 288""Maleta: 289" -> "Maleta: 290"
+"Maleta: 290" -> "Maleta: 289""Maleta: 290" -> "Maleta: 291"
+"Maleta: 291" -> "Maleta: 290""Maleta: 291" -> "Maleta: 292"
+"Maleta: 292" -> "Maleta: 291""Maleta: 292" -> "Maleta: 293"
+"Maleta: 293" -> "Maleta: 292""Maleta: 293" -> "Maleta: 294"
+"Maleta: 294" -> "Maleta: 293""Maleta: 294" -> "Maleta: 295"
+"Maleta: 295" -> "Maleta: 294""Maleta: 295" -> "Maleta: 296"
+"Maleta: 296" -> "Maleta: 295""Maleta: 296" -> "Maleta: 297"
+"Maleta: 297" -> "Maleta: 296""Maleta: 297" -> "Maleta: 298"
+"Maleta: 298" -> "Maleta: 297""Maleta: 298" -> "Maleta: 299"
+"Maleta: 299" -> "Maleta: 298""Maleta: 299" -> "Maleta: 300"
+"Maleta: 300" -> "Maleta: 299""Maleta: 300" -> "Maleta: 301"
+"Maleta: 301" -> "Maleta: 300""Maleta: 301" -> "Maleta: 302"
+"Maleta: 302" -> "Maleta: 301""Maleta: 302" -> "Maleta: 303"
+"Maleta: 303" -> "Maleta: 302""Maleta: 303" -> "Maleta: 304"
+"Maleta: 304" -> "Maleta: 303""Maleta: 304" -> "Maleta: 305"
+"Maleta: 305" -> "Maleta: 304""Maleta: 305" -> "Maleta: 306"
+"Maleta: 306" -> "Maleta: 305""Maleta: 306" -> "Maleta: 307"
+"Maleta: 307" -> "Maleta: 306""Maleta: 307" -> "Maleta: 308"
+"Maleta: 308" -> "Maleta: 307""Maleta: 308" -> "Maleta: 309"
+"Maleta: 309" -> "Maleta: 308""Maleta: 309" -> "Maleta: 310"
+"Maleta: 310" -> "Maleta: 309""Maleta: 310" -> "Maleta: 311"
+"Maleta: 311" -> "Maleta: 310""Maleta: 311" -> "Maleta: 312"
+"Maleta: 312" -> "Maleta: 311""Maleta: 312" -> "Maleta: 313"
+"Maleta: 313" -> "Maleta: 312""Maleta: 313" -> "Maleta: 314"
+"Maleta: 314" -> "Maleta: 313""Maleta: 314" -> "Maleta: 315"
+"Maleta: 315" -> "Maleta: 314""Maleta: 315" -> "Maleta: 316"
+"Maleta: 316" -> "Maleta: 315""Maleta: 316" -> "Maleta: 317"
+"Maleta: 317" -> "Maleta: 316""Maleta: 317" -> "Maleta: 318"
+"Maleta: 318" -> "Maleta: 317""Maleta: 318" -> "Maleta: 319"
+"Maleta: 319" -> "Maleta: 318""Maleta: 319" -> "Maleta: 320"
+"Maleta: 320" -> "Maleta: 319""Maleta: 320" -> "Maleta: 321"
+"Maleta: 321" -> "Maleta: 320""Maleta: 321" -> "Maleta: 322"
+"Maleta: 322" -> "Maleta: 321""Maleta: 322" -> "Maleta: 323"
+"Maleta: 323" -> "Maleta: 322""Maleta: 323" -> "Maleta: 324"
+"Maleta: 324" -> "Maleta: 323""Maleta: 324" -> "Maleta: 325"
+"Maleta: 325" -> "Maleta: 324""Maleta: 325" -> "Maleta: 326"
+"Maleta: 326" -> "Maleta: 325""Maleta: 326" -> "Maleta: 327"
+"Maleta: 327" -> "Maleta: 326""Maleta: 327" -> "Maleta: 328"
+"Maleta: 328" -> "Maleta: 327""Maleta: 328" -> "Maleta: 329"
+"Maleta: 329" -> "Maleta: 328""Maleta: 329" -> "Maleta: 330"
+"Maleta: 330" -> "Maleta: 329""Maleta: 330" -> "Maleta: 331"
+"Maleta: 331" -> "Maleta: 330""Maleta: 331" -> "Maleta: 332"
+"Maleta: 332" -> "Maleta: 331""Maleta: 332" -> "Maleta: 333"
+"Maleta: 333" -> "Maleta: 332""Maleta: 333" -> "Maleta: 334"
+"Maleta: 334" -> "Maleta: 333""Maleta: 334" -> "Maleta: 335"
+"Maleta: 335" -> "Maleta: 334""Maleta: 335" -> "Maleta: 336"
+"Maleta: 336" -> "Maleta: 335""Maleta: 336" -> "Maleta: 337"
+"Maleta: 337" -> "Maleta: 336""Maleta: 337" -> "Maleta: 338"
+"Maleta: 338" -> "Maleta: 337""Maleta: 338" -> "Maleta: 339"
+"Maleta: 339" -> "Maleta: 338""Maleta: 339"
+"Maleta: 14" -> "Maleta: 339"
+"Maleta: 339" -> "Maleta: 14"
 }
 
 subgraph cluster_ListaMantenimiento{
@@ -1101,17 +1239,20 @@ node [shape=box, style=filled];
 label = "Area de Mantenimiento";
 color = blue;
 {rank=min;"Estacion: 0
-Estado: Libre
-Avion actual: Ninguno
-Turnos Restantes: 0";};
+Estado: Ocupado
+Avion actual: 4
+Turnos Restantes: 3";};
 "Estacion: 0
-Estado: Libre
-Avion actual: Ninguno
-Turnos Restantes: 0"subgraph cluster_ColaAviones{
+Estado: Ocupado
+Avion actual: 4
+Turnos Restantes: 3"subgraph cluster_ColaAviones{
 node [shape=box, style=filled];
 label = "Cola de Aviones Mantenimiento";
 color = blue;
-
+"Avion 5
+Turdos Desabordaje: 0
+Numero Pasajeros: 38
+Turdos Mantenimiento: 6"
 }
 
 

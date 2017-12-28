@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://NavalWars.org" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://NavalWars.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ServicioWeb</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://NavalWars.org">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Prueba">
+        <s:complexType />
+      </s:element>
+      <s:element name="PruebaResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NuevoUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nick" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NuevoUsuarioResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CargarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarUsuarioResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CargarJuegosAJugadores">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarJuegosAJugadoresResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarABB">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarABBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarABBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarNivel1Actual">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarNivel1ActualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarNivel1ActualResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN1UniSob">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN1UniSobResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN1UniSobResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaragaJuego">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaragaJuegoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CargarTablero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarTableroResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="PruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:Prueba" />
+  </wsdl:message>
+  <wsdl:message name="PruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:PruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="NuevoUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:NuevoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="NuevoUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:NuevoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="CargarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarJuegosAJugadoresSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarJuegosAJugadores" />
+  </wsdl:message>
+  <wsdl:message name="CargarJuegosAJugadoresSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarJuegosAJugadoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarABBSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarABB" />
+  </wsdl:message>
+  <wsdl:message name="GraficarABBSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarABBResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel1ActualSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarNivel1Actual" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel1ActualSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarNivel1ActualResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN1UniSobSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN1UniSob" />
+  </wsdl:message>
+  <wsdl:message name="GraN1UniSobSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN1UniSobResponse" />
+  </wsdl:message>
+  <wsdl:message name="CaragaJuegoSoapIn">
+    <wsdl:part name="parameters" element="tns:CaragaJuego" />
+  </wsdl:message>
+  <wsdl:message name="CaragaJuegoSoapOut">
+    <wsdl:part name="parameters" element="tns:CaragaJuegoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarTableroSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarTablero" />
+  </wsdl:message>
+  <wsdl:message name="CargarTableroSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarTableroResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceNavalWarsSoap">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <wsdl:input message="tns:PruebaSoapIn" />
+      <wsdl:output message="tns:PruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoUsuario">
+      <wsdl:input message="tns:NuevoUsuarioSoapIn" />
+      <wsdl:output message="tns:NuevoUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarUsuario">
+      <wsdl:input message="tns:CargarUsuarioSoapIn" />
+      <wsdl:output message="tns:CargarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarJuegosAJugadores">
+      <wsdl:input message="tns:CargarJuegosAJugadoresSoapIn" />
+      <wsdl:output message="tns:CargarJuegosAJugadoresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABB">
+      <wsdl:input message="tns:GraficarABBSoapIn" />
+      <wsdl:output message="tns:GraficarABBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel1Actual">
+      <wsdl:input message="tns:GraficarNivel1ActualSoapIn" />
+      <wsdl:output message="tns:GraficarNivel1ActualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniSob">
+      <wsdl:input message="tns:GraN1UniSobSoapIn" />
+      <wsdl:output message="tns:GraN1UniSobSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaragaJuego">
+      <wsdl:input message="tns:CaragaJuegoSoapIn" />
+      <wsdl:output message="tns:CaragaJuegoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarTablero">
+      <wsdl:input message="tns:CargarTableroSoapIn" />
+      <wsdl:output message="tns:CargarTableroSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceNavalWarsSoap" type="tns:WebServiceNavalWarsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://NavalWars.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <soap:operation soapAction="http://NavalWars.org/Prueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoUsuario">
+      <soap:operation soapAction="http://NavalWars.org/NuevoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarUsuario">
+      <soap:operation soapAction="http://NavalWars.org/CargarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarJuegosAJugadores">
+      <soap:operation soapAction="http://NavalWars.org/CargarJuegosAJugadores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABB">
+      <soap:operation soapAction="http://NavalWars.org/GraficarABB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel1Actual">
+      <soap:operation soapAction="http://NavalWars.org/GraficarNivel1Actual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniSob">
+      <soap:operation soapAction="http://NavalWars.org/GraN1UniSob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaragaJuego">
+      <soap:operation soapAction="http://NavalWars.org/CaragaJuego" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarTablero">
+      <soap:operation soapAction="http://NavalWars.org/CargarTablero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceNavalWarsSoap12" type="tns:WebServiceNavalWarsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://NavalWars.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <soap12:operation soapAction="http://NavalWars.org/Prueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoUsuario">
+      <soap12:operation soapAction="http://NavalWars.org/NuevoUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarUsuario">
+      <soap12:operation soapAction="http://NavalWars.org/CargarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarJuegosAJugadores">
+      <soap12:operation soapAction="http://NavalWars.org/CargarJuegosAJugadores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABB">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarABB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel1Actual">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarNivel1Actual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniSob">
+      <soap12:operation soapAction="http://NavalWars.org/GraN1UniSob" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaragaJuego">
+      <soap12:operation soapAction="http://NavalWars.org/CaragaJuego" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarTablero">
+      <soap12:operation soapAction="http://NavalWars.org/CargarTablero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceNavalWars">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ServicioWeb</wsdl:documentation>
+    <wsdl:port name="WebServiceNavalWarsSoap" binding="tns:WebServiceNavalWarsSoap">
+      <soap:address location="http://localhost:1480/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceNavalWarsSoap12" binding="tns:WebServiceNavalWarsSoap12">
+      <soap12:address location="http://localhost:1480/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

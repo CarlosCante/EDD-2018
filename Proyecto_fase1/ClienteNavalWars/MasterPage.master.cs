@@ -21,10 +21,23 @@ public partial class MasterPage : System.Web.UI.MasterPage
     protected void Button1_Click(object sender, EventArgs e)
     {
         
-        if (servidor.Login(TextBoxUsuario.Text, TextBoxPass.Text))
+        if (servidor.LoginAdministrador(TextBoxUsuario.Text, TextBoxPass.Text))
         {
             Response.Redirect("~/Administrador.aspx");
         }
+        else if(servidor.LoginUsuario(TextBoxUsuario.Text, TextBoxPass.Text))
+        {
+            if (servidor.VerificarJugador1(TextBoxUsuario.Text))
+            {
+                Response.Redirect("~/Jugador.aspx");
+            }
+            else if (servidor.VerificarJugador2(TextBoxUsuario.Text))
+            {
+                Response.Redirect("~/Jugador2.aspx");
+            }
+            
+        }
+
     }
     protected void Rehistro_Click(object sender, EventArgs e)
     {

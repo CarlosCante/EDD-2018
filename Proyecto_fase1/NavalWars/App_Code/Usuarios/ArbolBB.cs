@@ -9,6 +9,7 @@ using System.Web;
 public class ArbolBB
 {
     public NodoUsuario Raiz;
+    public int numeronodos = 0;
 	public ArbolBB()
 	{
         Raiz = null;
@@ -127,6 +128,36 @@ public class ArbolBB
 
     }
 
+    public bool VerificarUsuario(string nombre, string contraseña)
+    {
+        NodoUsuario aux = Raiz;
+
+        while (nombre.CompareTo(aux.NickName) != 0)
+        {
+            if (nombre.CompareTo(aux.NickName) < 0)
+            {
+                aux = aux.izq;
+            }
+            else if (nombre.CompareTo(aux.NickName) > 0)
+            {
+                aux = aux.der;
+            }
+
+            if (aux == null)
+                return false;
+        }
+
+        if(nombre.CompareTo(aux.NickName) == 0 && contraseña.CompareTo(aux.Contraseña) == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
     bool EsHoja(NodoUsuario nodo)
     {
         return (nodo.izq == null && nodo.der == null);
@@ -202,6 +233,7 @@ public class ArbolBB
             {
                 grafo = grafo + "Conectado: no\"";
             }
+
         }
         else
         {
@@ -226,7 +258,6 @@ public class ArbolBB
                 {
                     grafo = grafo + "Conectado: no\"\n";
                 }
-
                 grafo = grafo + apuntarNodos(r.izq);
             }
             if (r.der != null)
@@ -250,7 +281,6 @@ public class ArbolBB
                 {
                     grafo = grafo + "Conectado: no\"\n";
                 }
-
                 grafo = grafo + apuntarNodos(r.der);
 
             }
@@ -260,4 +290,114 @@ public class ArbolBB
 
         return grafo;
     }
+
+    public string GraficarListaJuegos()
+    {
+        string grafo = "digraph G {\n";
+
+        grafo += apuntarNodos2(Raiz);
+
+        grafo += "}\n";
+        return grafo;
+    }
+
+    string apuntarNodos2(NodoUsuario r)
+    {
+        string grafo = "";
+
+        if (r.izq == null && r.der == null)
+        {
+            grafo += r.ListaDeJuegos.Graficar(r.NickName);
+
+        }
+        else
+        {
+
+            grafo += r.ListaDeJuegos.Graficar(r.NickName);
+            if (r.izq != null)
+            {
+                grafo = grafo + apuntarNodos2(r.izq);
+            }
+            if (r.der != null)
+            {
+                grafo = grafo + apuntarNodos2(r.der);
+
+            }
+        }
+
+
+
+        return grafo;
+    }
+
+    public int ContarHojas(NodoUsuario raiz)
+    {
+        if(raiz == null)
+        {
+            return 0;
+        }
+        if((raiz.der == null) && (raiz.izq == null))
+        {
+            return 1;
+        }
+        else
+        {
+            return ContarHojas(raiz.izq) + ContarHojas(raiz.der);
+        }
+    }
+
+    public int ContarNodos(NodoUsuario raiz)
+    {
+        int res = 0;
+        if (raiz != null)
+        {
+            res += ContarNodos(raiz.izq);
+            res += 1;
+            res += ContarNodos(raiz.der);
+        }
+        return res;
+
+    }
+
+
+    public int Altura(NodoUsuario raiz)
+    {
+        int altizq;
+        int altder;
+
+        if (raiz == null)
+        {
+            return -1;
+        }
+        else
+        {
+            altizq = Altura(raiz.izq);
+            altder = Altura(raiz.der);
+
+            if(altizq > altder)
+            {
+                return altizq + 1;
+            }
+            else
+            {
+                return altder + 1;
+            }
+        }
+    }
+
+    public NodoUsuario Espejo(NodoUsuario raiz)
+    {
+        NodoUsuario tmp;
+
+        if(raiz != null)
+        {
+            tmp = raiz.izq;
+            raiz.izq = Espejo(raiz.der);
+            raiz.der = Espejo(tmp);
+        }
+
+        return raiz;
+    }
+
+
 }

@@ -1,0 +1,2586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://NavalWars.org" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://NavalWars.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ServicioWeb</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://NavalWars.org">
+      <s:element name="setUnidadesBAJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="setUnidadesBAJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setUnidadesBAJ2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setUnidadesSUBJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="setUnidadesSUBJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setUnidadesSUBJ2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginAdministrador">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginAdministradorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginAdministradorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginUsuarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Prueba">
+        <s:complexType />
+      </s:element>
+      <s:element name="PruebaResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Prueba2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nickname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Prueba2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Prueba2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificarJugador1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificarJugador1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerificarJugador1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificarJugador2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificarJugador2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerificarJugador2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NuevoUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nick" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NuevoUsuarioResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EliminarUaurio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nick" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarUaurioResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CargarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarUsuarioResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CargarContatos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarContatosResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CargarJuegosAJugadores">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarJuegosAJugadoresResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarABB">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarABBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarABBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarListasJuegos">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarListasJuegosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarListasJuegosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContarHojas">
+        <s:complexType />
+      </s:element>
+      <s:element name="ContarHojasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ContarHojasResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContarRamas">
+        <s:complexType />
+      </s:element>
+      <s:element name="ContarRamasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ContarRamasResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarABBEspejo">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarABBEspejoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarABBEspejoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlturaArbol">
+        <s:complexType />
+      </s:element>
+      <s:element name="AlturaArbolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AlturaArbolResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContarNiveles">
+        <s:complexType />
+      </s:element>
+      <s:element name="ContarNivelesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ContarNivelesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarContactoExistente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Contacto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarContactoExistenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgregarContactoExistenteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarContactoNoExistente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nick" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarContactoNoExistenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgregarContactoNoExistenteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarAVL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nick" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarAVLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarAVLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarTablaHash">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarTablaHashResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarTablaHashResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarContacto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nick" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contacto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarContactoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EliminarContactoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarNivel0Actual">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarNivel0ActualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarNivel0ActualResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarNivel0ActualJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarNivel0ActualJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarNivel0ActualJ2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarNivel0ActualJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarNivel0ActualJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarNivel0ActualJ1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarNivel1Actual">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarNivel1ActualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarNivel1ActualResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarNivel2Actual">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarNivel2ActualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarNivel2ActualResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraficarNivel3Actual">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraficarNivel3ActualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraficarNivel3ActualResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN0UniSob">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN0UniSobResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN0UniSobResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN1UniSob">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN1UniSobResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN1UniSobResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN2UniSob">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN2UniSobResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN2UniSobResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN3UniSob">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN3UniSobResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN3UniSobResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN0UniDes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN0UniDesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN0UniDesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN1UniDes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN1UniDesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN1UniDesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN2UniDes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN2UniDesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN2UniDesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GraN3UniDes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GraN3UniDesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GraN3UniDesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaragaJuego">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaragaJuegoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CargarParametrosManual">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="j1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="j2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nsa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nav" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nba" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nsub" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="x" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="y" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tiempo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarParametrosManualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CargarParametrosManualResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarTablero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linea" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargarTableroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertarUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tipo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="x" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="z" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jug" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarUnidadResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoverPieza">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Xorigen" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Yorigen" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Zorigen" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Xdestino" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Ydestino" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Zdestino" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jugador" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoverPiezaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MoverPiezaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Atacar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Xorigen" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Yorigen" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Zorigen" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Xdestino" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Ydestino" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Zdestino" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Jatacante" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Jdañado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AtacarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AtacarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nuevoUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NuevoPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nuevoCorreo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ModificarUsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarTurno">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="j" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarTurnoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerBitacora">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerBitacoraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerBitacoraResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarTurno">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultarTurnoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConsultarTurnoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getNombreJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="getNombreJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getNombreJ1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getNombreJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="getNombreJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getNombreJ2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnidadesSATJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUnidadesSATJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnidadesSATJ1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnidadesAVIJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUnidadesAVIJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnidadesAVIJ1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnidadesBAJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUnidadesBAJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnidadesBAJ1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnidadesSUBJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUnidadesSUBJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnidadesSUBJ1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnidadesSATJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUnidadesSATJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnidadesSATJ2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnidadesAVIJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUnidadesAVIJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnidadesAVIJ2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnidadesBAJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUnidadesBAJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnidadesBAJ2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnidadesSUBJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUnidadesSUBJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnidadesSUBJ2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setUnidadesSATJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="setUnidadesSATJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setUnidadesSATJ1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setUnidadesAVIJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="setUnidadesAVIJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setUnidadesAVIJ1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setUnidadesBAJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="setUnidadesBAJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setUnidadesBAJ1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setUnidadesSUBJ1">
+        <s:complexType />
+      </s:element>
+      <s:element name="setUnidadesSUBJ1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setUnidadesSUBJ1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setUnidadesSATJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="setUnidadesSATJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setUnidadesSATJ2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setUnidadesAVIJ2">
+        <s:complexType />
+      </s:element>
+      <s:element name="setUnidadesAVIJ2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setUnidadesAVIJ2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="setUnidadesBAJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:setUnidadesBAJ2" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesBAJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:setUnidadesBAJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesSUBJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:setUnidadesSUBJ2" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesSUBJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:setUnidadesSUBJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="LoginAdministradorSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginAdministrador" />
+  </wsdl:message>
+  <wsdl:message name="LoginAdministradorSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginAdministradorResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginUsuario" />
+  </wsdl:message>
+  <wsdl:message name="LoginUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="PruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:Prueba" />
+  </wsdl:message>
+  <wsdl:message name="PruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:PruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prueba2SoapIn">
+    <wsdl:part name="parameters" element="tns:Prueba2" />
+  </wsdl:message>
+  <wsdl:message name="Prueba2SoapOut">
+    <wsdl:part name="parameters" element="tns:Prueba2Response" />
+  </wsdl:message>
+  <wsdl:message name="VerificarJugador1SoapIn">
+    <wsdl:part name="parameters" element="tns:VerificarJugador1" />
+  </wsdl:message>
+  <wsdl:message name="VerificarJugador1SoapOut">
+    <wsdl:part name="parameters" element="tns:VerificarJugador1Response" />
+  </wsdl:message>
+  <wsdl:message name="VerificarJugador2SoapIn">
+    <wsdl:part name="parameters" element="tns:VerificarJugador2" />
+  </wsdl:message>
+  <wsdl:message name="VerificarJugador2SoapOut">
+    <wsdl:part name="parameters" element="tns:VerificarJugador2Response" />
+  </wsdl:message>
+  <wsdl:message name="NuevoUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:NuevoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="NuevoUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:NuevoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminarUaurioSoapIn">
+    <wsdl:part name="parameters" element="tns:EliminarUaurio" />
+  </wsdl:message>
+  <wsdl:message name="EliminarUaurioSoapOut">
+    <wsdl:part name="parameters" element="tns:EliminarUaurioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="CargarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarContatosSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarContatos" />
+  </wsdl:message>
+  <wsdl:message name="CargarContatosSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarContatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarJuegosAJugadoresSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarJuegosAJugadores" />
+  </wsdl:message>
+  <wsdl:message name="CargarJuegosAJugadoresSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarJuegosAJugadoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarABBSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarABB" />
+  </wsdl:message>
+  <wsdl:message name="GraficarABBSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarABBResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarListasJuegosSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarListasJuegos" />
+  </wsdl:message>
+  <wsdl:message name="GraficarListasJuegosSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarListasJuegosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContarHojasSoapIn">
+    <wsdl:part name="parameters" element="tns:ContarHojas" />
+  </wsdl:message>
+  <wsdl:message name="ContarHojasSoapOut">
+    <wsdl:part name="parameters" element="tns:ContarHojasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContarRamasSoapIn">
+    <wsdl:part name="parameters" element="tns:ContarRamas" />
+  </wsdl:message>
+  <wsdl:message name="ContarRamasSoapOut">
+    <wsdl:part name="parameters" element="tns:ContarRamasResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarABBEspejoSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarABBEspejo" />
+  </wsdl:message>
+  <wsdl:message name="GraficarABBEspejoSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarABBEspejoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AlturaArbolSoapIn">
+    <wsdl:part name="parameters" element="tns:AlturaArbol" />
+  </wsdl:message>
+  <wsdl:message name="AlturaArbolSoapOut">
+    <wsdl:part name="parameters" element="tns:AlturaArbolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContarNivelesSoapIn">
+    <wsdl:part name="parameters" element="tns:ContarNiveles" />
+  </wsdl:message>
+  <wsdl:message name="ContarNivelesSoapOut">
+    <wsdl:part name="parameters" element="tns:ContarNivelesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgregarContactoExistenteSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarContactoExistente" />
+  </wsdl:message>
+  <wsdl:message name="AgregarContactoExistenteSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarContactoExistenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgregarContactoNoExistenteSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarContactoNoExistente" />
+  </wsdl:message>
+  <wsdl:message name="AgregarContactoNoExistenteSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarContactoNoExistenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarAVLSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarAVL" />
+  </wsdl:message>
+  <wsdl:message name="GraficarAVLSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarAVLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarTablaHashSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarTablaHash" />
+  </wsdl:message>
+  <wsdl:message name="GraficarTablaHashSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarTablaHashResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminarContactoSoapIn">
+    <wsdl:part name="parameters" element="tns:EliminarContacto" />
+  </wsdl:message>
+  <wsdl:message name="EliminarContactoSoapOut">
+    <wsdl:part name="parameters" element="tns:EliminarContactoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel0ActualSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarNivel0Actual" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel0ActualSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarNivel0ActualResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel0ActualJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarNivel0ActualJ2" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel0ActualJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarNivel0ActualJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel0ActualJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarNivel0ActualJ1" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel0ActualJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarNivel0ActualJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel1ActualSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarNivel1Actual" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel1ActualSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarNivel1ActualResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel2ActualSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarNivel2Actual" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel2ActualSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarNivel2ActualResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel3ActualSoapIn">
+    <wsdl:part name="parameters" element="tns:GraficarNivel3Actual" />
+  </wsdl:message>
+  <wsdl:message name="GraficarNivel3ActualSoapOut">
+    <wsdl:part name="parameters" element="tns:GraficarNivel3ActualResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN0UniSobSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN0UniSob" />
+  </wsdl:message>
+  <wsdl:message name="GraN0UniSobSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN0UniSobResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN1UniSobSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN1UniSob" />
+  </wsdl:message>
+  <wsdl:message name="GraN1UniSobSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN1UniSobResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN2UniSobSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN2UniSob" />
+  </wsdl:message>
+  <wsdl:message name="GraN2UniSobSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN2UniSobResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN3UniSobSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN3UniSob" />
+  </wsdl:message>
+  <wsdl:message name="GraN3UniSobSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN3UniSobResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN0UniDesSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN0UniDes" />
+  </wsdl:message>
+  <wsdl:message name="GraN0UniDesSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN0UniDesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN1UniDesSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN1UniDes" />
+  </wsdl:message>
+  <wsdl:message name="GraN1UniDesSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN1UniDesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN2UniDesSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN2UniDes" />
+  </wsdl:message>
+  <wsdl:message name="GraN2UniDesSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN2UniDesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GraN3UniDesSoapIn">
+    <wsdl:part name="parameters" element="tns:GraN3UniDes" />
+  </wsdl:message>
+  <wsdl:message name="GraN3UniDesSoapOut">
+    <wsdl:part name="parameters" element="tns:GraN3UniDesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CaragaJuegoSoapIn">
+    <wsdl:part name="parameters" element="tns:CaragaJuego" />
+  </wsdl:message>
+  <wsdl:message name="CaragaJuegoSoapOut">
+    <wsdl:part name="parameters" element="tns:CaragaJuegoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarParametrosManualSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarParametrosManual" />
+  </wsdl:message>
+  <wsdl:message name="CargarParametrosManualSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarParametrosManualResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarTableroSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarTablero" />
+  </wsdl:message>
+  <wsdl:message name="CargarTableroSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarTableroResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarUnidad" />
+  </wsdl:message>
+  <wsdl:message name="InsertarUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MoverPiezaSoapIn">
+    <wsdl:part name="parameters" element="tns:MoverPieza" />
+  </wsdl:message>
+  <wsdl:message name="MoverPiezaSoapOut">
+    <wsdl:part name="parameters" element="tns:MoverPiezaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AtacarSoapIn">
+    <wsdl:part name="parameters" element="tns:Atacar" />
+  </wsdl:message>
+  <wsdl:message name="AtacarSoapOut">
+    <wsdl:part name="parameters" element="tns:AtacarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModificarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ModificarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ModificarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ModificarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarTurnoSoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarTurno" />
+  </wsdl:message>
+  <wsdl:message name="CambiarTurnoSoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarTurnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerBitacoraSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerBitacora" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerBitacoraSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerBitacoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarTurnoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarTurno" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarTurnoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarTurnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getNombreJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:getNombreJ1" />
+  </wsdl:message>
+  <wsdl:message name="getNombreJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:getNombreJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="getNombreJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:getNombreJ2" />
+  </wsdl:message>
+  <wsdl:message name="getNombreJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:getNombreJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesSATJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:getUnidadesSATJ1" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesSATJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:getUnidadesSATJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesAVIJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:getUnidadesAVIJ1" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesAVIJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:getUnidadesAVIJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesBAJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:getUnidadesBAJ1" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesBAJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:getUnidadesBAJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesSUBJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:getUnidadesSUBJ1" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesSUBJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:getUnidadesSUBJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesSATJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:getUnidadesSATJ2" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesSATJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:getUnidadesSATJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesAVIJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:getUnidadesAVIJ2" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesAVIJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:getUnidadesAVIJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesBAJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:getUnidadesBAJ2" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesBAJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:getUnidadesBAJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesSUBJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:getUnidadesSUBJ2" />
+  </wsdl:message>
+  <wsdl:message name="getUnidadesSUBJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:getUnidadesSUBJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesSATJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:setUnidadesSATJ1" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesSATJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:setUnidadesSATJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesAVIJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:setUnidadesAVIJ1" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesAVIJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:setUnidadesAVIJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesBAJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:setUnidadesBAJ1" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesBAJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:setUnidadesBAJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesSUBJ1SoapIn">
+    <wsdl:part name="parameters" element="tns:setUnidadesSUBJ1" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesSUBJ1SoapOut">
+    <wsdl:part name="parameters" element="tns:setUnidadesSUBJ1Response" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesSATJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:setUnidadesSATJ2" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesSATJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:setUnidadesSATJ2Response" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesAVIJ2SoapIn">
+    <wsdl:part name="parameters" element="tns:setUnidadesAVIJ2" />
+  </wsdl:message>
+  <wsdl:message name="setUnidadesAVIJ2SoapOut">
+    <wsdl:part name="parameters" element="tns:setUnidadesAVIJ2Response" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceNavalWarsSoap">
+    <wsdl:operation name="setUnidadesBAJ2">
+      <wsdl:input message="tns:setUnidadesBAJ2SoapIn" />
+      <wsdl:output message="tns:setUnidadesBAJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSUBJ2">
+      <wsdl:input message="tns:setUnidadesSUBJ2SoapIn" />
+      <wsdl:output message="tns:setUnidadesSUBJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginAdministrador">
+      <wsdl:input message="tns:LoginAdministradorSoapIn" />
+      <wsdl:output message="tns:LoginAdministradorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginUsuario">
+      <wsdl:input message="tns:LoginUsuarioSoapIn" />
+      <wsdl:output message="tns:LoginUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <wsdl:input message="tns:PruebaSoapIn" />
+      <wsdl:output message="tns:PruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Prueba2">
+      <wsdl:input message="tns:Prueba2SoapIn" />
+      <wsdl:output message="tns:Prueba2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarJugador1">
+      <wsdl:input message="tns:VerificarJugador1SoapIn" />
+      <wsdl:output message="tns:VerificarJugador1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarJugador2">
+      <wsdl:input message="tns:VerificarJugador2SoapIn" />
+      <wsdl:output message="tns:VerificarJugador2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoUsuario">
+      <wsdl:input message="tns:NuevoUsuarioSoapIn" />
+      <wsdl:output message="tns:NuevoUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUaurio">
+      <wsdl:input message="tns:EliminarUaurioSoapIn" />
+      <wsdl:output message="tns:EliminarUaurioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarUsuario">
+      <wsdl:input message="tns:CargarUsuarioSoapIn" />
+      <wsdl:output message="tns:CargarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarContatos">
+      <wsdl:input message="tns:CargarContatosSoapIn" />
+      <wsdl:output message="tns:CargarContatosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarJuegosAJugadores">
+      <wsdl:input message="tns:CargarJuegosAJugadoresSoapIn" />
+      <wsdl:output message="tns:CargarJuegosAJugadoresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABB">
+      <wsdl:input message="tns:GraficarABBSoapIn" />
+      <wsdl:output message="tns:GraficarABBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarListasJuegos">
+      <wsdl:input message="tns:GraficarListasJuegosSoapIn" />
+      <wsdl:output message="tns:GraficarListasJuegosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ContarHojas">
+      <wsdl:input message="tns:ContarHojasSoapIn" />
+      <wsdl:output message="tns:ContarHojasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ContarRamas">
+      <wsdl:input message="tns:ContarRamasSoapIn" />
+      <wsdl:output message="tns:ContarRamasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABBEspejo">
+      <wsdl:input message="tns:GraficarABBEspejoSoapIn" />
+      <wsdl:output message="tns:GraficarABBEspejoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AlturaArbol">
+      <wsdl:input message="tns:AlturaArbolSoapIn" />
+      <wsdl:output message="tns:AlturaArbolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ContarNiveles">
+      <wsdl:input message="tns:ContarNivelesSoapIn" />
+      <wsdl:output message="tns:ContarNivelesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarContactoExistente">
+      <wsdl:input message="tns:AgregarContactoExistenteSoapIn" />
+      <wsdl:output message="tns:AgregarContactoExistenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarContactoNoExistente">
+      <wsdl:input message="tns:AgregarContactoNoExistenteSoapIn" />
+      <wsdl:output message="tns:AgregarContactoNoExistenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarAVL">
+      <wsdl:input message="tns:GraficarAVLSoapIn" />
+      <wsdl:output message="tns:GraficarAVLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarTablaHash">
+      <wsdl:input message="tns:GraficarTablaHashSoapIn" />
+      <wsdl:output message="tns:GraficarTablaHashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarContacto">
+      <wsdl:input message="tns:EliminarContactoSoapIn" />
+      <wsdl:output message="tns:EliminarContactoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0Actual">
+      <wsdl:input message="tns:GraficarNivel0ActualSoapIn" />
+      <wsdl:output message="tns:GraficarNivel0ActualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0ActualJ2">
+      <wsdl:input message="tns:GraficarNivel0ActualJ2SoapIn" />
+      <wsdl:output message="tns:GraficarNivel0ActualJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0ActualJ1">
+      <wsdl:input message="tns:GraficarNivel0ActualJ1SoapIn" />
+      <wsdl:output message="tns:GraficarNivel0ActualJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel1Actual">
+      <wsdl:input message="tns:GraficarNivel1ActualSoapIn" />
+      <wsdl:output message="tns:GraficarNivel1ActualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel2Actual">
+      <wsdl:input message="tns:GraficarNivel2ActualSoapIn" />
+      <wsdl:output message="tns:GraficarNivel2ActualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel3Actual">
+      <wsdl:input message="tns:GraficarNivel3ActualSoapIn" />
+      <wsdl:output message="tns:GraficarNivel3ActualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN0UniSob">
+      <wsdl:input message="tns:GraN0UniSobSoapIn" />
+      <wsdl:output message="tns:GraN0UniSobSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniSob">
+      <wsdl:input message="tns:GraN1UniSobSoapIn" />
+      <wsdl:output message="tns:GraN1UniSobSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN2UniSob">
+      <wsdl:input message="tns:GraN2UniSobSoapIn" />
+      <wsdl:output message="tns:GraN2UniSobSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN3UniSob">
+      <wsdl:input message="tns:GraN3UniSobSoapIn" />
+      <wsdl:output message="tns:GraN3UniSobSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN0UniDes">
+      <wsdl:input message="tns:GraN0UniDesSoapIn" />
+      <wsdl:output message="tns:GraN0UniDesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniDes">
+      <wsdl:input message="tns:GraN1UniDesSoapIn" />
+      <wsdl:output message="tns:GraN1UniDesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN2UniDes">
+      <wsdl:input message="tns:GraN2UniDesSoapIn" />
+      <wsdl:output message="tns:GraN2UniDesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GraN3UniDes">
+      <wsdl:input message="tns:GraN3UniDesSoapIn" />
+      <wsdl:output message="tns:GraN3UniDesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaragaJuego">
+      <wsdl:input message="tns:CaragaJuegoSoapIn" />
+      <wsdl:output message="tns:CaragaJuegoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarParametrosManual">
+      <wsdl:input message="tns:CargarParametrosManualSoapIn" />
+      <wsdl:output message="tns:CargarParametrosManualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarTablero">
+      <wsdl:input message="tns:CargarTableroSoapIn" />
+      <wsdl:output message="tns:CargarTableroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarUnidad">
+      <wsdl:input message="tns:InsertarUnidadSoapIn" />
+      <wsdl:output message="tns:InsertarUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoverPieza">
+      <wsdl:input message="tns:MoverPiezaSoapIn" />
+      <wsdl:output message="tns:MoverPiezaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Atacar">
+      <wsdl:input message="tns:AtacarSoapIn" />
+      <wsdl:output message="tns:AtacarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarUsuario">
+      <wsdl:input message="tns:ModificarUsuarioSoapIn" />
+      <wsdl:output message="tns:ModificarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarTurno">
+      <wsdl:input message="tns:CambiarTurnoSoapIn" />
+      <wsdl:output message="tns:CambiarTurnoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerBitacora">
+      <wsdl:input message="tns:ObtenerBitacoraSoapIn" />
+      <wsdl:output message="tns:ObtenerBitacoraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTurno">
+      <wsdl:input message="tns:ConsultarTurnoSoapIn" />
+      <wsdl:output message="tns:ConsultarTurnoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getNombreJ1">
+      <wsdl:input message="tns:getNombreJ1SoapIn" />
+      <wsdl:output message="tns:getNombreJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getNombreJ2">
+      <wsdl:input message="tns:getNombreJ2SoapIn" />
+      <wsdl:output message="tns:getNombreJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSATJ1">
+      <wsdl:input message="tns:getUnidadesSATJ1SoapIn" />
+      <wsdl:output message="tns:getUnidadesSATJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesAVIJ1">
+      <wsdl:input message="tns:getUnidadesAVIJ1SoapIn" />
+      <wsdl:output message="tns:getUnidadesAVIJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesBAJ1">
+      <wsdl:input message="tns:getUnidadesBAJ1SoapIn" />
+      <wsdl:output message="tns:getUnidadesBAJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSUBJ1">
+      <wsdl:input message="tns:getUnidadesSUBJ1SoapIn" />
+      <wsdl:output message="tns:getUnidadesSUBJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSATJ2">
+      <wsdl:input message="tns:getUnidadesSATJ2SoapIn" />
+      <wsdl:output message="tns:getUnidadesSATJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesAVIJ2">
+      <wsdl:input message="tns:getUnidadesAVIJ2SoapIn" />
+      <wsdl:output message="tns:getUnidadesAVIJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesBAJ2">
+      <wsdl:input message="tns:getUnidadesBAJ2SoapIn" />
+      <wsdl:output message="tns:getUnidadesBAJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSUBJ2">
+      <wsdl:input message="tns:getUnidadesSUBJ2SoapIn" />
+      <wsdl:output message="tns:getUnidadesSUBJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSATJ1">
+      <wsdl:input message="tns:setUnidadesSATJ1SoapIn" />
+      <wsdl:output message="tns:setUnidadesSATJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesAVIJ1">
+      <wsdl:input message="tns:setUnidadesAVIJ1SoapIn" />
+      <wsdl:output message="tns:setUnidadesAVIJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesBAJ1">
+      <wsdl:input message="tns:setUnidadesBAJ1SoapIn" />
+      <wsdl:output message="tns:setUnidadesBAJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSUBJ1">
+      <wsdl:input message="tns:setUnidadesSUBJ1SoapIn" />
+      <wsdl:output message="tns:setUnidadesSUBJ1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSATJ2">
+      <wsdl:input message="tns:setUnidadesSATJ2SoapIn" />
+      <wsdl:output message="tns:setUnidadesSATJ2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesAVIJ2">
+      <wsdl:input message="tns:setUnidadesAVIJ2SoapIn" />
+      <wsdl:output message="tns:setUnidadesAVIJ2SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceNavalWarsSoap" type="tns:WebServiceNavalWarsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="setUnidadesBAJ2">
+      <soap:operation soapAction="http://NavalWars.org/setUnidadesBAJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSUBJ2">
+      <soap:operation soapAction="http://NavalWars.org/setUnidadesSUBJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginAdministrador">
+      <soap:operation soapAction="http://NavalWars.org/LoginAdministrador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginUsuario">
+      <soap:operation soapAction="http://NavalWars.org/LoginUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <soap:operation soapAction="http://NavalWars.org/Prueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prueba2">
+      <soap:operation soapAction="http://NavalWars.org/Prueba2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarJugador1">
+      <soap:operation soapAction="http://NavalWars.org/VerificarJugador1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarJugador2">
+      <soap:operation soapAction="http://NavalWars.org/VerificarJugador2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoUsuario">
+      <soap:operation soapAction="http://NavalWars.org/NuevoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUaurio">
+      <soap:operation soapAction="http://NavalWars.org/EliminarUaurio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarUsuario">
+      <soap:operation soapAction="http://NavalWars.org/CargarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarContatos">
+      <soap:operation soapAction="http://NavalWars.org/CargarContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarJuegosAJugadores">
+      <soap:operation soapAction="http://NavalWars.org/CargarJuegosAJugadores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABB">
+      <soap:operation soapAction="http://NavalWars.org/GraficarABB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarListasJuegos">
+      <soap:operation soapAction="http://NavalWars.org/GraficarListasJuegos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContarHojas">
+      <soap:operation soapAction="http://NavalWars.org/ContarHojas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContarRamas">
+      <soap:operation soapAction="http://NavalWars.org/ContarRamas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABBEspejo">
+      <soap:operation soapAction="http://NavalWars.org/GraficarABBEspejo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlturaArbol">
+      <soap:operation soapAction="http://NavalWars.org/AlturaArbol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContarNiveles">
+      <soap:operation soapAction="http://NavalWars.org/ContarNiveles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarContactoExistente">
+      <soap:operation soapAction="http://NavalWars.org/AgregarContactoExistente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarContactoNoExistente">
+      <soap:operation soapAction="http://NavalWars.org/AgregarContactoNoExistente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarAVL">
+      <soap:operation soapAction="http://NavalWars.org/GraficarAVL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarTablaHash">
+      <soap:operation soapAction="http://NavalWars.org/GraficarTablaHash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarContacto">
+      <soap:operation soapAction="http://NavalWars.org/EliminarContacto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0Actual">
+      <soap:operation soapAction="http://NavalWars.org/GraficarNivel0Actual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0ActualJ2">
+      <soap:operation soapAction="http://NavalWars.org/GraficarNivel0ActualJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0ActualJ1">
+      <soap:operation soapAction="http://NavalWars.org/GraficarNivel0ActualJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel1Actual">
+      <soap:operation soapAction="http://NavalWars.org/GraficarNivel1Actual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel2Actual">
+      <soap:operation soapAction="http://NavalWars.org/GraficarNivel2Actual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel3Actual">
+      <soap:operation soapAction="http://NavalWars.org/GraficarNivel3Actual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN0UniSob">
+      <soap:operation soapAction="http://NavalWars.org/GraN0UniSob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniSob">
+      <soap:operation soapAction="http://NavalWars.org/GraN1UniSob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN2UniSob">
+      <soap:operation soapAction="http://NavalWars.org/GraN2UniSob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN3UniSob">
+      <soap:operation soapAction="http://NavalWars.org/GraN3UniSob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN0UniDes">
+      <soap:operation soapAction="http://NavalWars.org/GraN0UniDes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniDes">
+      <soap:operation soapAction="http://NavalWars.org/GraN1UniDes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN2UniDes">
+      <soap:operation soapAction="http://NavalWars.org/GraN2UniDes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN3UniDes">
+      <soap:operation soapAction="http://NavalWars.org/GraN3UniDes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaragaJuego">
+      <soap:operation soapAction="http://NavalWars.org/CaragaJuego" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarParametrosManual">
+      <soap:operation soapAction="http://NavalWars.org/CargarParametrosManual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarTablero">
+      <soap:operation soapAction="http://NavalWars.org/CargarTablero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarUnidad">
+      <soap:operation soapAction="http://NavalWars.org/InsertarUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoverPieza">
+      <soap:operation soapAction="http://NavalWars.org/MoverPieza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Atacar">
+      <soap:operation soapAction="http://NavalWars.org/Atacar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarUsuario">
+      <soap:operation soapAction="http://NavalWars.org/ModificarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarTurno">
+      <soap:operation soapAction="http://NavalWars.org/CambiarTurno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerBitacora">
+      <soap:operation soapAction="http://NavalWars.org/ObtenerBitacora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTurno">
+      <soap:operation soapAction="http://NavalWars.org/ConsultarTurno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNombreJ1">
+      <soap:operation soapAction="http://NavalWars.org/getNombreJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNombreJ2">
+      <soap:operation soapAction="http://NavalWars.org/getNombreJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSATJ1">
+      <soap:operation soapAction="http://NavalWars.org/getUnidadesSATJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesAVIJ1">
+      <soap:operation soapAction="http://NavalWars.org/getUnidadesAVIJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesBAJ1">
+      <soap:operation soapAction="http://NavalWars.org/getUnidadesBAJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSUBJ1">
+      <soap:operation soapAction="http://NavalWars.org/getUnidadesSUBJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSATJ2">
+      <soap:operation soapAction="http://NavalWars.org/getUnidadesSATJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesAVIJ2">
+      <soap:operation soapAction="http://NavalWars.org/getUnidadesAVIJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesBAJ2">
+      <soap:operation soapAction="http://NavalWars.org/getUnidadesBAJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSUBJ2">
+      <soap:operation soapAction="http://NavalWars.org/getUnidadesSUBJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSATJ1">
+      <soap:operation soapAction="http://NavalWars.org/setUnidadesSATJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesAVIJ1">
+      <soap:operation soapAction="http://NavalWars.org/setUnidadesAVIJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesBAJ1">
+      <soap:operation soapAction="http://NavalWars.org/setUnidadesBAJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSUBJ1">
+      <soap:operation soapAction="http://NavalWars.org/setUnidadesSUBJ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSATJ2">
+      <soap:operation soapAction="http://NavalWars.org/setUnidadesSATJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesAVIJ2">
+      <soap:operation soapAction="http://NavalWars.org/setUnidadesAVIJ2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceNavalWarsSoap12" type="tns:WebServiceNavalWarsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="setUnidadesBAJ2">
+      <soap12:operation soapAction="http://NavalWars.org/setUnidadesBAJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSUBJ2">
+      <soap12:operation soapAction="http://NavalWars.org/setUnidadesSUBJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginAdministrador">
+      <soap12:operation soapAction="http://NavalWars.org/LoginAdministrador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginUsuario">
+      <soap12:operation soapAction="http://NavalWars.org/LoginUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <soap12:operation soapAction="http://NavalWars.org/Prueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prueba2">
+      <soap12:operation soapAction="http://NavalWars.org/Prueba2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarJugador1">
+      <soap12:operation soapAction="http://NavalWars.org/VerificarJugador1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarJugador2">
+      <soap12:operation soapAction="http://NavalWars.org/VerificarJugador2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoUsuario">
+      <soap12:operation soapAction="http://NavalWars.org/NuevoUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUaurio">
+      <soap12:operation soapAction="http://NavalWars.org/EliminarUaurio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarUsuario">
+      <soap12:operation soapAction="http://NavalWars.org/CargarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarContatos">
+      <soap12:operation soapAction="http://NavalWars.org/CargarContatos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarJuegosAJugadores">
+      <soap12:operation soapAction="http://NavalWars.org/CargarJuegosAJugadores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABB">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarABB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarListasJuegos">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarListasJuegos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContarHojas">
+      <soap12:operation soapAction="http://NavalWars.org/ContarHojas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContarRamas">
+      <soap12:operation soapAction="http://NavalWars.org/ContarRamas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarABBEspejo">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarABBEspejo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlturaArbol">
+      <soap12:operation soapAction="http://NavalWars.org/AlturaArbol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContarNiveles">
+      <soap12:operation soapAction="http://NavalWars.org/ContarNiveles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarContactoExistente">
+      <soap12:operation soapAction="http://NavalWars.org/AgregarContactoExistente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarContactoNoExistente">
+      <soap12:operation soapAction="http://NavalWars.org/AgregarContactoNoExistente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarAVL">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarAVL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarTablaHash">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarTablaHash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarContacto">
+      <soap12:operation soapAction="http://NavalWars.org/EliminarContacto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0Actual">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarNivel0Actual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0ActualJ2">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarNivel0ActualJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel0ActualJ1">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarNivel0ActualJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel1Actual">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarNivel1Actual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel2Actual">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarNivel2Actual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraficarNivel3Actual">
+      <soap12:operation soapAction="http://NavalWars.org/GraficarNivel3Actual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN0UniSob">
+      <soap12:operation soapAction="http://NavalWars.org/GraN0UniSob" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniSob">
+      <soap12:operation soapAction="http://NavalWars.org/GraN1UniSob" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN2UniSob">
+      <soap12:operation soapAction="http://NavalWars.org/GraN2UniSob" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN3UniSob">
+      <soap12:operation soapAction="http://NavalWars.org/GraN3UniSob" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN0UniDes">
+      <soap12:operation soapAction="http://NavalWars.org/GraN0UniDes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN1UniDes">
+      <soap12:operation soapAction="http://NavalWars.org/GraN1UniDes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN2UniDes">
+      <soap12:operation soapAction="http://NavalWars.org/GraN2UniDes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GraN3UniDes">
+      <soap12:operation soapAction="http://NavalWars.org/GraN3UniDes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaragaJuego">
+      <soap12:operation soapAction="http://NavalWars.org/CaragaJuego" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarParametrosManual">
+      <soap12:operation soapAction="http://NavalWars.org/CargarParametrosManual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarTablero">
+      <soap12:operation soapAction="http://NavalWars.org/CargarTablero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarUnidad">
+      <soap12:operation soapAction="http://NavalWars.org/InsertarUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoverPieza">
+      <soap12:operation soapAction="http://NavalWars.org/MoverPieza" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Atacar">
+      <soap12:operation soapAction="http://NavalWars.org/Atacar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarUsuario">
+      <soap12:operation soapAction="http://NavalWars.org/ModificarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarTurno">
+      <soap12:operation soapAction="http://NavalWars.org/CambiarTurno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerBitacora">
+      <soap12:operation soapAction="http://NavalWars.org/ObtenerBitacora" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTurno">
+      <soap12:operation soapAction="http://NavalWars.org/ConsultarTurno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNombreJ1">
+      <soap12:operation soapAction="http://NavalWars.org/getNombreJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNombreJ2">
+      <soap12:operation soapAction="http://NavalWars.org/getNombreJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSATJ1">
+      <soap12:operation soapAction="http://NavalWars.org/getUnidadesSATJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesAVIJ1">
+      <soap12:operation soapAction="http://NavalWars.org/getUnidadesAVIJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesBAJ1">
+      <soap12:operation soapAction="http://NavalWars.org/getUnidadesBAJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSUBJ1">
+      <soap12:operation soapAction="http://NavalWars.org/getUnidadesSUBJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSATJ2">
+      <soap12:operation soapAction="http://NavalWars.org/getUnidadesSATJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesAVIJ2">
+      <soap12:operation soapAction="http://NavalWars.org/getUnidadesAVIJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesBAJ2">
+      <soap12:operation soapAction="http://NavalWars.org/getUnidadesBAJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesSUBJ2">
+      <soap12:operation soapAction="http://NavalWars.org/getUnidadesSUBJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSATJ1">
+      <soap12:operation soapAction="http://NavalWars.org/setUnidadesSATJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesAVIJ1">
+      <soap12:operation soapAction="http://NavalWars.org/setUnidadesAVIJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesBAJ1">
+      <soap12:operation soapAction="http://NavalWars.org/setUnidadesBAJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSUBJ1">
+      <soap12:operation soapAction="http://NavalWars.org/setUnidadesSUBJ1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesSATJ2">
+      <soap12:operation soapAction="http://NavalWars.org/setUnidadesSATJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUnidadesAVIJ2">
+      <soap12:operation soapAction="http://NavalWars.org/setUnidadesAVIJ2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceNavalWars">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ServicioWeb</wsdl:documentation>
+    <wsdl:port name="WebServiceNavalWarsSoap" binding="tns:WebServiceNavalWarsSoap">
+      <soap:address location="http://localhost:1480/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceNavalWarsSoap12" binding="tns:WebServiceNavalWarsSoap12">
+      <soap12:address location="http://localhost:1480/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

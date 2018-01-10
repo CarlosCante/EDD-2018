@@ -3575,7 +3575,6 @@ public class Matriz
                 tmpx2 = null;
             }
 
-            tmpx = tmpx.Derecha;
         }
 
         tmpy = CY.primero;
@@ -4847,7 +4846,6 @@ public class Matriz
                 tmpy2 = null;
             }
 
-            tmpy = tmpy.Derecha;
         }
 
 
@@ -4988,6 +4986,7 @@ public class Matriz
     }
 
     //*********************************************METODOS AUXILIARES**********************************************
+    
 
     public static string NumeroALetras(int columna)
     {

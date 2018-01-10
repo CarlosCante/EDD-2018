@@ -11,7 +11,7 @@ public partial class Administrador : System.Web.UI.Page
     static ServidorNavalWars.WebServiceNavalWarsSoapClient servidor = new ServidorNavalWars.WebServiceNavalWarsSoapClient();
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
     protected void Button5_Click(object sender, EventArgs e)
     {

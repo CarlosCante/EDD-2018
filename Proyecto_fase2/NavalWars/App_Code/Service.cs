@@ -58,15 +58,7 @@ public class Service : System.Web.Services.WebService
     [WebMethod]
     public void Prueba()
     {
-        arbolb.Insertar(new NodoAtaque(1, 0, 0, "", "", "", null, "", ""));
-        arbolb.Insertar(new NodoAtaque(2, 0, 0, "", "", "", null, "", ""));
-        arbolb.Insertar(new NodoAtaque(3, 0, 0, "", "", "", null, "", ""));
-        arbolb.Insertar(new NodoAtaque(4, 0, 0, "", "", "", null, "", ""));
-        arbolb.Insertar(new NodoAtaque(5, 0, 0, "", "", "", null, "", ""));
-        arbolb.Insertar(new NodoAtaque(6, 0, 0, "", "", "", null, "", ""));
-        arbolb.Insertar(new NodoAtaque(7, 0, 0, "", "", "", null, "", ""));
-        arbolb.Insertar(new NodoAtaque(8, 0, 0, "", "", "", null, "", ""));
-        arbolb.Insertar(new NodoAtaque(9, 0, 0, "", "", "", null, "", ""));
+        
         return;
     }
     [WebMethod]

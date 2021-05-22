@@ -1,1 +1,3 @@
-# EDD_201314448
+# EDD 
+
+Proyectos y practicas del curso de estrucutras de datos
